@@ -23,6 +23,12 @@ public class SonarScript : MonoBehaviour {
         StartCoroutine("FindTargetsWithDelay", 0.2f);
         view_mesh_filter.mesh = view_mesh;
     }
+
+    private void Update()
+    {
+        DrawFielOfView();
+    }
+
     IEnumerator FindTargetsWithDelay(float delay)
     {
         while(true)
@@ -61,7 +67,7 @@ public class SonarScript : MonoBehaviour {
         {
             angle_deg += transform.eulerAngles.y;
         }
-        return new Vector3(Mathf.Sin(angle_deg * Mathf.Deg2Rad), 0, Mathf.Cos(angle_deg * Mathf.Deg2Rad));
+        return new Vector3(Mathf.Sin(angle_deg * Mathf.Deg2Rad), Mathf.Cos(angle_deg * Mathf.Deg2Rad), 0);
     }
     void DrawFielOfView()
     {
@@ -82,9 +88,13 @@ public class SonarScript : MonoBehaviour {
         for(int i = 0; i < vertex_count - 1; i++)
         {
             vertices[i + 1] = transform.InverseTransformPoint(view_points[i]);
-            triangles[i * 3] = 0;
-            triangles[i * 3 + 1] = i + 1;
-            triangles[i * 3 + 2] = i + 2;
+
+            if (i < vertex_count - 2)
+            {
+                triangles[i * 3] = 0;
+                triangles[i * 3 + 1] = i + 1;
+                triangles[i * 3 + 2] = i + 2;
+            }
 
         }
         view_mesh.Clear();
@@ -96,6 +106,7 @@ public class SonarScript : MonoBehaviour {
     ViewCastInfo ViewCast(float global_angle)
     {
         Vector3 direction = DirFromAngle(global_angle,true);
+
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, direction, out hit, sonar_radius, obstacle_mask))
