@@ -224,8 +224,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba976474e77c1b4dad1b9eb7bcebb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonar_radius: -0.93
-  sonar_angle: 222.63
+  sonar_radius: 2.58
+  sonar_angle: 3
+  target_mask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacle_mask:
+    serializedVersion: 2
+    m_Bits: 0
+  visible_targets: []
 --- !u!23 &1584621856
 MeshRenderer:
   m_ObjectHideFlags: 0
