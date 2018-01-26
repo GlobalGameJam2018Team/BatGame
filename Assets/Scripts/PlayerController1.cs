@@ -64,6 +64,6 @@ public class PlayerController1 : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A))
                 velocity_vector.x = 0.0f;
         }
-        transform.position += new Vector3(velocity_vector.x, velocity_vector.y, 0);
+        transform.position += new Vector3(velocity_vector.x, 0, velocity_vector.y); //since everything is rotated 90 degrees in X axis so the map can have a nav mesh
     }
 }
