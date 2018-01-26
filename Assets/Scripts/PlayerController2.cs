@@ -31,15 +31,15 @@ public class PlayerController2 : MonoBehaviour {
             
         }
 
-        Vector3 pos = gameObject.transform.position;
+     
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            phys.velocity = new Vector3(3, phys.velocity.z, phys.velocity.y);
+            phys.velocity = new Vector3(3, phys.velocity.y, phys.velocity.z);
         }
        
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            phys.velocity = new Vector3(-3, phys.velocity.z, phys.velocity.y);
+            phys.velocity = new Vector3(-3, phys.velocity.y, phys.velocity.z);
         }
 
     }
