@@ -20,10 +20,10 @@ public class PlayerController2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        float angle = Mathf.Atan2(phys.velocity.x, phys.velocity.y / 2.0f) * Mathf.Rad2Deg - 90;
+       /* float angle = Mathf.Atan2(phys.velocity.x, phys.velocity.y / 2.0f) * Mathf.Rad2Deg - 90;
         gameObject.transform.eulerAngles = new Vector3(0, 0, -angle);
 
-
+*/
         if (Input.GetKeyDown("space"))
         {
             phys.velocity = new Vector3(phys.velocity.x, 0, phys.velocity.z);
