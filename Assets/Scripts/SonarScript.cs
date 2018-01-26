@@ -12,13 +12,16 @@ public class SonarScript : MonoBehaviour {
     public LayerMask target_mask;
     public LayerMask obstacle_mask;
     public float mesh_resolution;
-
+    public MeshFilter view_mesh_filter;
+    Mesh view_mesh;
     [HideInInspector]
     public List<Transform> visible_targets = new List<Transform>();
 
     private void Start()
     {
+        view_mesh = new Mesh();
         StartCoroutine("FindTargetsWithDelay", 0.2f);
+        view_mesh_filter.mesh = view_mesh;
     }
     IEnumerator FindTargetsWithDelay(float delay)
     {
@@ -72,7 +75,22 @@ public class SonarScript : MonoBehaviour {
             view_points.Add(new_view_cast.point);
         }
 
+        int vertex_count = view_points.Count + 1;
+        Vector3[] vertices = new Vector3[vertex_count];
+        int[] triangles = new int[(vertex_count - 2) * 3];
+        vertices[0] = Vector3.zero;
+        for(int i = 0; i < vertex_count - 1; i++)
+        {
+            vertices[i + 1] = transform.InverseTransformPoint(view_points[i]);
+            triangles[i * 3] = 0;
+            triangles[i * 3 + 1] = i + 1;
+            triangles[i * 3 + 2] = i + 2;
 
+        }
+        view_mesh.Clear();
+        view_mesh.vertices = vertices;
+        view_mesh.triangles = triangles;
+        view_mesh.RecalculateNormals();
     }
 
     ViewCastInfo ViewCast(float global_angle)
