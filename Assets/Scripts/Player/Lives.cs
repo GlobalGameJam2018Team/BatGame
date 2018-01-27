@@ -15,12 +15,18 @@ public class Lives : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-       
-        if(collision.gameObject.layer == 10 || collision.gameObject.layer ==11)
-        {           
+        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 11)
+        {
             lives--;
-            Vector3 savePos = bBoard.savePoints[bBoard.lastPointActive].transform.position;
-            transform.position = new Vector3(savePos.x, 0, savePos.z);
+            if (lives < 0)
+            {
+                GameObject.Find("Canvas").GetComponent<WinLoseUI>().LostGame(collision.gameObject);
+            }
+            else
+            {
+                Vector3 savePos = bBoard.savePoints[bBoard.lastPointActive].transform.position;
+                transform.position = new Vector3(savePos.x, 0, savePos.z);
+            }
         }
 
     }
