@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22606435}
   - component: {fileID: 22606436}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (32)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -136,8 +136,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 22606434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.456, y: 0, z: 20.5}
-  m_LocalScale: {x: 0.025533061, y: 1, z: 28.431532}
+  m_LocalPosition: {x: 0.468, y: 0, z: 26.8}
+  m_LocalScale: {x: 0.03287398, y: 1, z: 41.341232}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 32
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 83888016}
   - component: {fileID: 83888017}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (14)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -177,8 +177,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83888015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.224, y: 0, z: 50.5}
-  m_LocalScale: {x: 0.019765664, y: 1, z: 7.4729595}
+  m_LocalPosition: {x: -0.208, y: 0, z: 50.8}
+  m_LocalScale: {x: 0.04751799, y: 1, z: 9.060963}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 14
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138756222}
   - component: {fileID: 138756223}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (21)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -354,8 +354,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 138756221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.052, y: 0, z: 48.2}
-  m_LocalScale: {x: 0.08079823, y: 1, z: 3.386805}
+  m_LocalPosition: {x: 0.052, y: 0, z: 48.6}
+  m_LocalScale: {x: 0.08079823, y: 1, z: 4.6568556}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 21
@@ -366,6 +366,47 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 138756221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &147558858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 147558859}
+  - component: {fileID: 147558860}
+  m_Layer: 8
+  m_Name: Level_colision (36)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147558859
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147558858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.216, y: 0, z: 11.2}
+  m_LocalScale: {x: 0.03568977, y: 2.4965682, z: 6.0293217}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &147558860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147558858}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -452,7 +493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187802711}
   - component: {fileID: 187802712}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (33)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -466,8 +507,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 187802710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.522, y: 0, z: 0.3}
-  m_LocalScale: {x: 0.025533067, y: 1, z: 9.240511}
+  m_LocalPosition: {x: 0.524, y: 0, z: 0.3}
+  m_LocalScale: {x: 0.033192985, y: 1, z: 15.246881}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 33
@@ -719,6 +760,47 @@ NavMeshAgent:
   m_BaseOffset: 1.0000002
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1 &366798596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 366798597}
+  - component: {fileID: 366798598}
+  m_Layer: 8
+  m_Name: Level_colision (40)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366798597
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366798596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.028, y: 0, z: 62.4}
+  m_LocalScale: {x: 0.041071113, y: 3.1272755, z: 6.570813}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &366798598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366798596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &369685800
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 369685801}
   - component: {fileID: 369685802}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (24)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -742,8 +824,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 369685800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.43, y: 0, z: 88.2}
-  m_LocalScale: {x: 0.022335049, y: 1, z: 15.060528}
+  m_LocalPosition: {x: 0.437, y: 0, z: 90.1}
+  m_LocalScale: {x: 0.029035714, y: 1, z: 16.94309}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 24
@@ -769,7 +851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376966184}
   - component: {fileID: 376966185}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (1)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -784,7 +866,7 @@ Transform:
   m_GameObject: {fileID: 376966183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.35, y: 0, z: -3.9}
-  m_LocalScale: {x: 0.2683918, y: 1, z: 1}
+  m_LocalScale: {x: 0.33884385, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 1
@@ -1006,7 +1088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485088534}
   - component: {fileID: 485088535}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (4)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1020,8 +1102,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 485088533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29, y: 0, z: 17.9}
-  m_LocalScale: {x: 0.019765664, y: 1, z: 12.20085}
+  m_LocalPosition: {x: -0.295, y: 0, z: 17.9}
+  m_LocalScale: {x: 0.016553765, y: 1, z: 13.291299}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 4
@@ -1263,7 +1345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668922153}
   - component: {fileID: 668922154}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (5)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1304,7 +1386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676720000}
   - component: {fileID: 676720001}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (6)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1318,8 +1400,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 676719999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.446, y: 0, z: 12.6}
-  m_LocalScale: {x: 0.07733266, y: 1, z: 2.4006479}
+  m_LocalPosition: {x: -0.458, y: 0, z: 11.7}
+  m_LocalScale: {x: 0.08119928, y: 0.99403673, z: 2.4006479}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 6
@@ -1345,7 +1427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 678287892}
   - component: {fileID: 678287893}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (10)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1360,7 +1442,7 @@ Transform:
   m_GameObject: {fileID: 678287891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.428, y: 0, z: 77.5}
-  m_LocalScale: {x: 0.019765664, y: 1, z: 28.331938}
+  m_LocalScale: {x: 0.028907286, y: 1, z: 38.956406}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 10
@@ -1500,7 +1582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717052299}
   - component: {fileID: 717052300}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (16)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1514,8 +1596,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717052298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.112, y: 0, z: 55.5}
-  m_LocalScale: {x: 0.021652533, y: 1, z: 15.490461}
+  m_LocalPosition: {x: -0.11, y: 0, z: 55.5}
+  m_LocalScale: {x: 0.021652533, y: 1, z: 17.039507}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 16
@@ -1754,6 +1836,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &749111367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 749111368}
+  - component: {fileID: 749111369}
+  m_Layer: 8
+  m_Name: Level_colision (41)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749111368
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749111367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.49, y: 0, z: 9.2}
+  m_LocalScale: {x: 0.06523979, y: 2.2061129, z: 8.576377}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &749111369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749111367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &757353660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +2022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768904282}
   - component: {fileID: 768904283}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (11)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1913,8 +2036,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768904281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.506, y: 0, z: 94}
-  m_LocalScale: {x: 0.09439424, y: 1, z: 2.40065}
+  m_LocalPosition: {x: -0.506, y: 0, z: 94.7}
+  m_LocalScale: {x: 0.14159158, y: 1, z: 3.3909175}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 11
@@ -1940,7 +2063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866202452}
   - component: {fileID: 866202453}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (35)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1955,7 +2078,7 @@ Transform:
   m_GameObject: {fileID: 866202451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.346, y: 0, z: 15}
-  m_LocalScale: {x: 0.021064917, y: 1, z: 14.926845}
+  m_LocalScale: {x: 0.03870718, y: 1, z: 17.891216}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 35
@@ -1981,7 +2104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897128357}
   - component: {fileID: 897128358}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (28)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -1995,8 +2118,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897128356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.433, y: 0, z: 54.3}
-  m_LocalScale: {x: 0.020070605, y: 1, z: 12.377347}
+  m_LocalPosition: {x: 0.433, y: 0, z: 50.6}
+  m_LocalScale: {x: 0.026844434, y: 1, z: 22.17477}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 28
@@ -2167,7 +2290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966101718}
   - component: {fileID: 966101719}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (26)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2181,8 +2304,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 966101717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.606, y: 0, z: 70.2}
-  m_LocalScale: {x: 0.027835034, y: 1, z: 45.0891}
+  m_LocalPosition: {x: 0.617, y: 0, z: 70.2}
+  m_LocalScale: {x: 0.030966477, y: 1.1795043, z: 45.0891}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 26
@@ -2208,7 +2331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988838669}
   - component: {fileID: 988838670}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (12)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2222,8 +2345,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988838668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.444, y: 0, z: 57.4}
-  m_LocalScale: {x: 0.015572141, y: 1, z: 7.4502406}
+  m_LocalPosition: {x: -0.437, y: 0, z: 58.1}
+  m_LocalScale: {x: 0.024915425, y: 1, z: 8.2883835}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 12
@@ -2249,7 +2372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995713714}
   - component: {fileID: 995713715}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (31)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2263,8 +2386,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 995713713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.357, y: 0, z: 38.9}
-  m_LocalScale: {x: 0.16976684, y: 1, z: 4.623093}
+  m_LocalPosition: {x: 0.38, y: 0, z: 38.5}
+  m_LocalScale: {x: 0.21008648, y: 1, z: 4.623093}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 31
@@ -2290,7 +2413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058819527}
   - component: {fileID: 1058819528}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (7)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2304,7 +2427,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1058819526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.254, y: 0, z: 12.6}
+  m_LocalPosition: {x: -0.256, y: 0, z: 11.3}
   m_LocalScale: {x: 0.0773327, y: 1, z: 2.40065}
   m_Children: []
   m_Father: {fileID: 1714136307}
@@ -2402,7 +2525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095156020}
   - component: {fileID: 1095156021}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (3)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2416,8 +2539,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1095156019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2097, y: 0, z: 3.2000008}
-  m_LocalScale: {x: 0.019765664, y: 1, z: 12.20085}
+  m_LocalPosition: {x: -0.214, y: 0, z: 3.2000008}
+  m_LocalScale: {x: 0.014484549, y: 1, z: 17.996235}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 3
@@ -2484,7 +2607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1137997035
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2546,7 +2669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152088713}
   - component: {fileID: 1152088714}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2587,7 +2710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170581329}
   - component: {fileID: 1170581330}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (27)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2601,8 +2724,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1170581328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.522, y: 0, z: 45.7}
-  m_LocalScale: {x: 0.10194586, y: 1, z: 3.9447238}
+  m_LocalPosition: {x: 0.522, y: 0, z: 44.2}
+  m_LocalScale: {x: 0.14060564, y: 1, z: 4.930905}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 27
@@ -2628,7 +2751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182786162}
   - component: {fileID: 1182786163}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (2)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -2643,7 +2766,7 @@ Transform:
   m_GameObject: {fileID: 1182786161}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4951, y: 0, z: 3.2}
-  m_LocalScale: {x: 0.019765664, y: 1, z: 12.200847}
+  m_LocalScale: {x: 0.01581262, y: 1, z: 18.148659}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 2
@@ -2990,7 +3113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1353266350
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3045,6 +3168,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1359760900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1359760901}
+  - component: {fileID: 1359760902}
+  m_Layer: 8
+  m_Name: Level_colision (42)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1359760901
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359760900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.323, y: 0, z: 9.200001}
+  m_LocalScale: {x: 0.06523982, y: 2.20611, z: 8.57638}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1359760902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359760900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1366228406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1366228407}
+  - component: {fileID: 1366228408}
+  m_Layer: 8
+  m_Name: Level_colision (39)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1366228407
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1366228406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.128, y: 0, z: 63.2}
+  m_LocalScale: {x: 0.04526668, y: 1, z: 6.1009154}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1366228408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1366228406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1381159210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,7 +3456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498733902}
   - component: {fileID: 1498733903}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (17)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -3266,7 +3471,7 @@ Transform:
   m_GameObject: {fileID: 1498733901}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.151, y: 0, z: 73.5}
-  m_LocalScale: {x: 0.02084059, y: 1, z: 10.775488}
+  m_LocalScale: {x: 0.025269214, y: 1, z: 21.147}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 17
@@ -3292,7 +3497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505052137}
   - component: {fileID: 1505052138}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (20)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -3306,8 +3511,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1505052136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.015, y: 0, z: 55.5}
-  m_LocalScale: {x: 0.01972194, y: 1, z: 14.977601}
+  m_LocalPosition: {x: 0.015, y: 0, z: 54.8}
+  m_LocalScale: {x: 0.030815529, y: 1, z: 17.037014}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 20
@@ -3476,7 +3681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522031726}
   - component: {fileID: 1522031727}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (9)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -3490,8 +3695,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1522031725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.588, y: 0, z: 32.5}
-  m_LocalScale: {x: 0.019765664, y: 1, z: 12.20085}
+  m_LocalPosition: {x: -0.592, y: 0, z: 38}
+  m_LocalScale: {x: 0.019765664, y: 1, z: 45.653286}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 9
@@ -7360,7 +7565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590780576}
   - component: {fileID: 1590780577}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (19)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -7374,8 +7579,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590780575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.057, y: 0, z: 73.5}
-  m_LocalScale: {x: 0.019478433, y: 1, z: 10.119557}
+  m_LocalPosition: {x: 0.059, y: 0, z: 73.5}
+  m_LocalScale: {x: 0.022643674, y: 1, z: 16.191353}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 19
@@ -7392,6 +7597,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1654781425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1654781426}
+  - component: {fileID: 1654781427}
+  m_Layer: 8
+  m_Name: Level_colision (38)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1654781426
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654781425}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.52, y: 0, z: 23}
+  m_LocalScale: {x: 0.20256732, y: 0.99403995, z: 3.6909995}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1654781427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654781425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1672049709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7401,7 +7647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672049710}
   - component: {fileID: 1672049711}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (8)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -7415,8 +7661,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672049709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.028, y: 0, z: 23.3}
-  m_LocalScale: {x: 0.6366434, y: 1, z: 2.40065}
+  m_LocalPosition: {x: 0.031, y: 0, z: 23.3}
+  m_LocalScale: {x: 0.6663866, y: 1, z: 3.0908313}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 8
@@ -7607,8 +7853,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1714136307}
-  m_Layer: 10
-  m_Name: Parent_collider
+  m_Layer: 8
+  m_Name: Parent_Collider
   m_TagString: Spikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7660,6 +7906,13 @@ Transform:
   - {fileID: 187802711}
   - {fileID: 1789172309}
   - {fileID: 866202452}
+  - {fileID: 147558859}
+  - {fileID: 2061348179}
+  - {fileID: 1654781426}
+  - {fileID: 1366228407}
+  - {fileID: 366798597}
+  - {fileID: 749111368}
+  - {fileID: 1359760901}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7672,7 +7925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1789172309}
   - component: {fileID: 1789172310}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (34)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -7686,8 +7939,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1789172308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.278, y: 0, z: 0.29999924}
-  m_LocalScale: {x: 0.025533067, y: 1, z: 9.24051}
+  m_LocalPosition: {x: 0.285, y: 0, z: -0.1}
+  m_LocalScale: {x: 0.032873996, y: 1, z: 17.653278}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 34
@@ -7848,7 +8101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799995835}
   - component: {fileID: 1799995836}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (22)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -7862,8 +8115,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1799995834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.086, y: 0, z: 63.7}
-  m_LocalScale: {x: 0.017445784, y: 1, z: 33.32285}
+  m_LocalPosition: {x: 0.086, y: 0, z: 64.8}
+  m_LocalScale: {x: 0.025296388, y: 1, z: 36.238586}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 22
@@ -7889,7 +8142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806765006}
   - component: {fileID: 1806765007}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (25)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -7903,8 +8156,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1806765005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.519, y: 0, z: 95.9}
-  m_LocalScale: {x: 0.11735891, y: 1, z: 4.141639}
+  m_LocalPosition: {x: 0.53, y: 0, z: 96.3}
+  m_LocalScale: {x: 0.15256737, y: 1, z: 5.280604}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 25
@@ -7998,7 +8251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936994379}
   - component: {fileID: 1936994380}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (29)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -8013,7 +8266,7 @@ Transform:
   m_GameObject: {fileID: 1936994378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.36, y: 0, z: 59.5}
-  m_LocalScale: {x: 0.1567541, y: 1, z: 3.6281083}
+  m_LocalScale: {x: 0.17438896, y: 1, z: 5.260761}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 29
@@ -8039,7 +8292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977690549}
   - component: {fileID: 1977690550}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (30)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -8053,8 +8306,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1977690548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.281, y: 0, z: 49.6}
-  m_LocalScale: {x: 0.021553684, y: 1, z: 21.627695}
+  m_LocalPosition: {x: 0.286, y: 0, z: 49.6}
+  m_LocalScale: {x: 0.029636316, y: 1, z: 24.331152}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 30
@@ -8178,7 +8431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059476184}
   - component: {fileID: 2059476185}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (13)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -8192,8 +8445,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2059476183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36, y: 0, z: 55.1}
-  m_LocalScale: {x: 0.17780134, y: 1, z: 2.40065}
+  m_LocalPosition: {x: -0.333, y: 0, z: 55.1}
+  m_LocalScale: {x: 0.24225435, y: 1, z: 3.4809422}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 13
@@ -8210,6 +8463,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2061348178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2061348179}
+  - component: {fileID: 2061348180}
+  m_Layer: 8
+  m_Name: Level_colision (37)
+  m_TagString: Spikes
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2061348179
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061348178}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.59, y: 0, z: 68.8}
+  m_LocalScale: {x: 0.019765664, y: 1, z: 53.944233}
+  m_Children: []
+  m_Father: {fileID: 1714136307}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2061348180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061348178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2075147502
 GameObject:
   m_ObjectHideFlags: 0
@@ -8219,7 +8513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075147503}
   - component: {fileID: 2075147504}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (18)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -8234,7 +8528,7 @@ Transform:
   m_GameObject: {fileID: 2075147502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.046, y: 0, z: 82.5}
-  m_LocalScale: {x: 0.16594303, y: 1, z: 3.8925705}
+  m_LocalScale: {x: 0.24891454, y: 1, z: 3.8925705}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 18
@@ -8291,7 +8585,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124361631}
   - component: {fileID: 2124361632}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (23)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -8305,8 +8599,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2124361630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.276, y: 0, z: 82.2}
-  m_LocalScale: {x: 0.33092952, y: 1, z: 3.3218699}
+  m_LocalPosition: {x: 0.278, y: 0, z: 82.2}
+  m_LocalScale: {x: 0.33092952, y: 1, z: 4.2353745}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 23
@@ -8400,7 +8694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142049241}
   - component: {fileID: 2142049242}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (15)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -8414,8 +8708,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2142049240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.169, y: 0, z: 48.2}
-  m_LocalScale: {x: 0.12540582, y: 1, z: 2.40065}
+  m_LocalPosition: {x: -0.167, y: 0, z: 48.6}
+  m_LocalScale: {x: 0.13481125, y: 1, z: 3.6909995}
   m_Children: []
   m_Father: {fileID: 1714136307}
   m_RootOrder: 15
