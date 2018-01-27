@@ -7,7 +7,7 @@ public class SnakeLogic : MonoBehaviour {
     public GameObject player;
     private NavMeshAgent agent;
 
-    public float speed = 0.5f;
+    public float speed = 0.0f;
    
     Camera camera;
 
@@ -18,16 +18,19 @@ public class SnakeLogic : MonoBehaviour {
 
     public float snakeSpeed = 1.0f;
     public float min_distance = 0.02f;
+    private bool canJump = false;
 
     private bool player_detected = false;
     private Vector3 playerPosition = new Vector3(0,0,0);
     private bool objectiveReached = false;
-
+    private float waitTime = 0.0f;
     // Use this for initialization
     void Start () {
         camera = GetComponent<Camera>();
         agent = GetComponent<NavMeshAgent>();
         GoToPos(positionB);
+        agent.isStopped = false;
+        waitTime = 0.0f;
     }
 	
 	// Update is called once per frame
@@ -55,6 +58,7 @@ public class SnakeLogic : MonoBehaviour {
             {
 
                 player_detected = true;
+                agent.isStopped = true;
                 playerPosition = player.transform.position;
                 Debug.Log("DETECTED");
             }
@@ -62,7 +66,13 @@ public class SnakeLogic : MonoBehaviour {
 
         else
         {
-            if (playerPosition != Vector3.zero && !objectiveReached)
+            waitTime += Time.deltaTime;
+            if (waitTime >= 0.5f && !canJump)
+            {
+                canJump = true;
+            }
+
+            if (playerPosition != Vector3.zero && !objectiveReached && canJump)
             {
                 Vector3 diff = playerPosition - transform.position;
                 gameObject.transform.position += diff.normalized * speed;
@@ -86,6 +96,8 @@ public class SnakeLogic : MonoBehaviour {
         {
             objectiveReached = false;
             player_detected = false;
+            canJump = false; waitTime = 0.0f;
+            agent.isStopped = false;
             transform.eulerAngles = new Vector3(0, -viewAngle, 0);
             GoToPos(positionB);
         }
