@@ -39,16 +39,19 @@ Shader "Custom/SonarFX"
 	}
 		CGPROGRAM
 
-#pragma surface surf Lambert
+#pragma surface surf Lambert alpha
 #pragma multi_compile SONAR_DIRECTIONAL SONAR_SPHERICAL
+
+		sampler2D _MainTex;
 
 		struct Input
 	{
+		float2 uv_MainTex;
 		float3 worldPos;
 	};
 
 	float3 _SonarBaseColor;
-	float3 _SonarWaveColor;
+	float4 _SonarWaveColor;
 	float4 _SonarWaveParams; // Amp, Exp, Interval, Speed
 	float3 _SonarWaveVector;
 	float3 _SonarAddColor;
@@ -78,6 +81,7 @@ Shader "Custom/SonarFX"
 		// Apply to the surface.
 		o.Albedo = _SonarBaseColor;
 		o.Emission = _SonarWaveColor * w + _SonarAddColor;
+		o.Alpha = _SonarWaveColor * (1-w);
 	}
 
 	ENDCG

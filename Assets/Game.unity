@@ -2184,7 +2184,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1797993867}
   - component: {fileID: 1797993870}
-  - component: {fileID: 1797993869}
   - component: {fileID: 1797993868}
   - component: {fileID: 1797993872}
   - component: {fileID: 1797993871}
@@ -2242,20 +2241,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1797993869
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1797993866}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1797993870
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2316,7 +2301,7 @@ MonoBehaviour:
   _direction: {x: 0, y: 0, z: 1}
   _origin: {x: 0, y: 0, z: 0}
   _baseColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
-  _waveColor: {r: 1, g: 0.2, b: 0.2, a: 0}
+  _waveColor: {r: 0, g: 0, b: 0, a: 0}
   _waveAmplitude: 2
   _waveExponent: 22
   _waveInterval: 20
