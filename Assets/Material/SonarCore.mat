@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Fantasy-Nature-4K-3D-Wallpaper
-  m_Shader: {fileID: 4800000, guid: 8d4149e5dd8c3304080503d54c50e3eb, type: 3}
+  m_Name: SonarCore
+  m_Shader: {fileID: 4800000, guid: 42cdddf1bc1199f48b6f4bab0971ae6e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -74,8 +74,8 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SonarAddColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SonarBaseColor: {r: 0, g: 0, b: 0, a: 0.509}
-    - _SonarWaveColor: {r: 1, g: 0, b: 0, a: 0}
-    - _SonarWaveParams: {r: 1, g: 2.1, b: 6.1, a: 10}
-    - _SonarWaveVector: {r: 0, g: 0, b: 0, a: 0}
+    - _SonarAddColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SonarBaseColor: {r: 0.1, g: 0.1, b: 0.1, a: 0}
+    - _SonarWaveColor: {r: 1, g: 0.1, b: 0.1, a: 0}
+    - _SonarWaveParams: {r: 1, g: 20, b: 20, a: 10}
+    - _SonarWaveVector: {r: 0, g: 0, b: 1, a: 0}
