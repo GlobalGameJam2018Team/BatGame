@@ -15,13 +15,13 @@ public class CheckPointCollission : MonoBehaviour {
     {
         if(collision.gameObject.layer == 12)
         {
-            CheckPointLogic check = collision.gameObject.GetComponent<CheckPointLogic>();
+            CheckPointLogic check = collision.gameObject.GetComponentInChildren<CheckPointLogic>();
             if(!check.activated)
             {
                 if (check.checkPointNumber > bBoard.lastPointActive)
                     bBoard.lastPointActive = check.checkPointNumber;
 
-                check.activated = false;
+                check.activated = true;
 
             }
         }
