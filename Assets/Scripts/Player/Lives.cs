@@ -27,8 +27,10 @@ public class Lives : MonoBehaviour {
             else
             {
                 anim.SetBool("dead", true);
-                
-          
+                GetComponent<SphereCollider>().enabled=false;
+                GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                GetComponent<Rigidbody>().useGravity = false ;
+
             }
         }
 
@@ -39,10 +41,14 @@ public class Lives : MonoBehaviour {
 
        if( anim.GetBool("dead"))
        {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("dead"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("dead") &&
+   anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
                 anim.SetBool("dead", false);
+                GetComponent<SphereCollider>().enabled = true;
+                GetComponent<Rigidbody>().constraints =  RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
 
+                GetComponent<Rigidbody>().useGravity = true;
                 Vector3 savePos = bBoard.savePoints[bBoard.lastPointActive].transform.position;
                 transform.position = new Vector3(savePos.x, 0, savePos.z);
             }

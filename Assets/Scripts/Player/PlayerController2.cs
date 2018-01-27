@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController2 : MonoBehaviour {
 
     Rigidbody phys;
+        Animator anim;
+
     public SpriteRenderer renderer;
     public float horizontal_speed = 3.0f;
     public float force = 500;
@@ -19,6 +21,8 @@ public class PlayerController2 : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+                anim = GetComponent<Animator>();
+
         Physics.gravity = new Vector3(0, 0, -9.81f);
         phys = GetComponent<Rigidbody>();
         phys.velocity = new Vector3(1, 0, 0);
@@ -39,14 +43,14 @@ public class PlayerController2 : MonoBehaviour {
             phys.AddForce(new Vector3(0, 0, force));            
         }
      
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow)&&!anim.GetBool("dead"))
         {
             phys.velocity = new Vector3(horizontal_speed, 0, phys.velocity.z);
             renderer.flipX = false;
 
         }
        
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow)&&!anim.GetBool("dead"))
         {
             phys.velocity = new Vector3(-horizontal_speed, 0, phys.velocity.z);
             renderer.flipX = true;
