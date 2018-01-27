@@ -27,6 +27,8 @@ using System.Collections.Generic;
 public class SonarFx : MonoBehaviour
 {
     //Material mat;
+    public float colddown = 5.0f;
+
     Renderer rend;
     public Transform pos_go;
     public float sonarTime = 0.0f;
@@ -91,6 +93,8 @@ public class SonarFx : MonoBehaviour
     int waveParamsID;
     int waveVectorID;
     int addColorID;
+    float current_cd_time = 0.0f;
+    bool cd_active = true;
     Vector3 waveVector;
 
     public SonarScript sonar_script;
@@ -123,8 +127,9 @@ public class SonarFx : MonoBehaviour
         Shader.SetGlobalColor(addColorID, _addColor);
         rend.material.SetVector("_SonarWaveVector", new Vector4(pos_go.position.x, pos_go.position.y, pos_go.position.z,1));
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow)&& cd_active)
         {
+            cd_active = false;
             sonarTime = 0.0f;
             List<GameObject> objs = sonar_script.GetVisibleTargetsObjs();
 
@@ -137,6 +142,15 @@ public class SonarFx : MonoBehaviour
                         obj.GetComponent<StalagmiteCollision>().Fall();
                     }
                 }
+            }
+        }
+        if(!cd_active)
+        {
+            current_cd_time += Time.deltaTime;
+            if(current_cd_time>colddown)
+            {
+                current_cd_time = 0.0f;
+                cd_active = true;
             }
         }
         sonarTime += Time.deltaTime;
@@ -155,5 +169,17 @@ public class SonarFx : MonoBehaviour
             Shader.EnableKeyword("SONAR_SPHERICAL");
             Shader.SetGlobalVector(waveVectorID, _origin);
         }
+    }
+
+    public float GetAbsoluteCDTime()
+    {
+        float absolute_time = current_cd_time / colddown;
+        if (absolute_time > 1.0f)
+            absolute_time = 1.0f;
+        return absolute_time;
+    }
+    public bool GetCDActive()
+    {
+        return cd_active;
     }
 }
