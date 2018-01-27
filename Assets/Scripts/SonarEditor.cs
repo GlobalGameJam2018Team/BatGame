@@ -10,7 +10,7 @@ public class SonarEditor : Editor {
     {
         SonarScript sonar = (SonarScript)target;
         Handles.color = Color.white;
-        Handles.DrawWireArc(sonar.transform.position, Vector3.forward, Vector3.up, 360, sonar.sonar_radius);
+        Handles.DrawWireArc(sonar.transform.position, Vector3.up, Vector3.forward, 360, sonar.sonar_radius);
 
         Vector3 sonar_angle_A = sonar.DirFromAngle(-sonar.sonar_angle / 2, false);
         Vector3 sonar_angle_B = sonar.DirFromAngle(sonar.sonar_angle / 2, false);
