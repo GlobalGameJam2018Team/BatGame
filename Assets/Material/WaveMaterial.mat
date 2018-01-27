@@ -7,12 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: WaveMaterial
-  m_Shader: {fileID: 4800000, guid: 83ee4fbdf4cd4c54388c9ba94a9c85a9, type: 3}
+  m_Shader: {fileID: 4800000, guid: 42cdddf1bc1199f48b6f4bab0971ae6e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -59,7 +59,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _ExternRingDiameter: 0
+    - _ExternRingDiameter: 60
     - _GlossMapScale: 1
     - _Glossiness: 0.447
     - _GlossyReflections: 1
@@ -83,3 +83,8 @@ Material:
     - _Distort: {r: 0.5, g: 0.5, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Position: {r: 0.93, g: -2.3, b: -0.77, a: 1}
+    - _SonarAddColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SonarBaseColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SonarWaveColor: {r: 1, g: 0.1, b: 0.1, a: 0}
+    - _SonarWaveParams: {r: 11.35, g: 20, b: 3, a: 10}
+    - _SonarWaveVector: {r: -5.7185283, g: 0.5, b: -7.01562, a: 1}
