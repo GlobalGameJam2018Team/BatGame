@@ -18,7 +18,6 @@ public class SpiderShoot : MonoBehaviour
     private bool player_detected = false;
 
     public GameObject spider_projectile;
-    public float projectile_speed = 1.0f;
     public float shoot_cooldown = 2.0f;
     private float shoot_timer = 0.0f;
 
@@ -63,12 +62,19 @@ public class SpiderShoot : MonoBehaviour
         //---------------
 
         //SHOOT
-        if(shoot_timer >= shoot_cooldown)
+        if (player_detected)
         {
-            shoot_timer = 0.0f;
-
+            if (shoot_timer >= shoot_cooldown)
+            {
+                shoot_timer = 0.0f;
+                GameObject projectile = GameObject.Instantiate(spider_projectile);
+                projectile.transform.position = transform.position;
+                projectile.SetActive(true);
+            }
+            shoot_timer += Time.deltaTime;
         }
-        shoot_timer += Time.deltaTime;
+        else
+            shoot_timer = 0.0f;
         //---------------
     }
 
@@ -76,16 +82,5 @@ public class SpiderShoot : MonoBehaviour
     {
         agent.speed = spider_speed;
         agent.SetDestination(new_pos);
-    }
-}
-
-public class Projectile
-{
-    private float speed = 1.0f;
-
-    public Projectile CreateProjectile(float projectile_speed)
-    {
-        speed = projectile_speed;
-        return this;
     }
 }
