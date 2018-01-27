@@ -8,7 +8,6 @@ public class UpdateSonar : MonoBehaviour {
     public Transform target;
     void Update()
     {
-        material.SetVector("Target position", new Vector4(target.position.x, target.position.y, target.position.z, 0));
     }
     
 }

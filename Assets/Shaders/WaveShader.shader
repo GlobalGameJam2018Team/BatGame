@@ -9,7 +9,6 @@
 		_MinimumRenderDistance("Min render dist",Float) = 10
 		_MaximumFadeDistance("Max fade dist", Float) = 20
 
-		_Position("Target position", Vector) = (3,3,3)
 
 	}
 		SubShader{
@@ -40,7 +39,6 @@
 		float _ExternRingDiameter;
 		float _MinimumRenderDistance;
 		float _MaximumFadeDistance;
-		Vector _Position;
 
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -52,7 +50,7 @@
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
 			float distance = length(_WorldSpaceCameraPos - IN.worldPos);
-			float2 position = float2(_Position.x, _Position.y);
+			float2 position = float2((0.5 - IN.uv_MainTex.x) * 2, (0.5 - IN.uv_MainTex.y) * 2);
 			float ringDistanceFromCenter = sqrt(position.x * position.x + position.y * position.y) * _ExternRingDiameter;
 			
 			clip(1 - ringDistanceFromCenter);
