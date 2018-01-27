@@ -17,6 +17,7 @@ public class SonarScript : MonoBehaviour {
     public int edge_resolution_iteration;
     public float edge_distance_limit;
     public MeshFilter view_mesh_filter;
+    public float mask_cut = 0.15f;
     Mesh view_mesh;
     [HideInInspector]
     public List<Transform> visible_targets = new List<Transform>();
@@ -142,7 +143,7 @@ public class SonarScript : MonoBehaviour {
         vertices[0] = Vector3.zero;
         for(int i = 0; i < vertex_count - 1; i++)
         {
-            vertices[i + 1] = transform.InverseTransformPoint(view_points[i]);
+            vertices[i + 1] = transform.InverseTransformPoint(view_points[i])+Vector3.forward*mask_cut;
 
             if (i < vertex_count - 2)
             {
