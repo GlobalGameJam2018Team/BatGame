@@ -27,10 +27,8 @@ public class PlayerController2 : MonoBehaviour {
         if (Input.GetKeyDown("space"))
         {
             phys.velocity = new Vector3(phys.velocity.x, 0, phys.velocity.z);
-            phys.AddForce(new Vector3(0, 0, force));
-            
+            phys.AddForce(new Vector3(0, 0, force));            
         }
-
      
         if (Input.GetKey(KeyCode.RightArrow))
         {
