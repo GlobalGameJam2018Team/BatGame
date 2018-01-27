@@ -10,9 +10,11 @@ public class Lives : MonoBehaviour {
     public BlackBoard bBoard;
     Animator anim;
     bool can_die = true;
-    // Use this for initialization
-    void Start () {
+
+    void Start ()
+    {
         anim = GetComponent<Animator>();
+        can_die = true;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -30,14 +32,12 @@ public class Lives : MonoBehaviour {
                 anim.SetBool("dead", true);
                 GetComponent<SphereCollider>().enabled=false;
                 GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-                GetComponent<Rigidbody>().useGravity = false ;
-
+                GetComponent<Rigidbody>().useGravity = false;
             }
         }
 
     }
 
-    // Update is called once per frame
     void Update () {
 
        if( anim.GetBool("dead"))
