@@ -33,7 +33,10 @@ Shader "Custom/SonarFX"
 		SubShader
 	{
 		Tags{ "RenderType" = "Transparent" }
-
+		Stencil{
+		Ref 1
+		Comp equal
+	}
 		CGPROGRAM
 
 #pragma surface surf Lambert
@@ -75,7 +78,6 @@ Shader "Custom/SonarFX"
 		// Apply to the surface.
 		o.Albedo = _SonarBaseColor;
 		o.Emission = _SonarWaveColor * w + _SonarAddColor;
-		o.Alpha = 1 - (_SonarWaveColor * w + _SonarAddColor);
 	}
 
 	ENDCG

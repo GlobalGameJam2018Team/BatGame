@@ -25,6 +25,8 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class SonarFx : MonoBehaviour
 {
+    public Material mat;
+    public Transform pos_go;
     // Sonar mode (directional or spherical)
     public enum SonarMode { Directional, Spherical }
     [SerializeField]
@@ -86,6 +88,7 @@ public class SonarFx : MonoBehaviour
     int waveParamsID;
     int waveVectorID;
     int addColorID;
+    Vector3 waveVector;
 
     void Awake()
     {
@@ -112,6 +115,7 @@ public class SonarFx : MonoBehaviour
         Shader.SetGlobalColor(baseColorID, _baseColor);
         Shader.SetGlobalColor(waveColorID, _waveColor);
         Shader.SetGlobalColor(addColorID, _addColor);
+        mat.SetVector("_SonarWaveVector", new Vector4(pos_go.position.x, pos_go.position.y, pos_go.position.z,1));
 
         var param = new Vector4(_waveAmplitude, _waveExponent, _waveInterval, _waveSpeed);
         Shader.SetGlobalVector(waveParamsID, param);
