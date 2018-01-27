@@ -139,7 +139,7 @@ public class SonarFx : MonoBehaviour
                 {
                     if (obj.tag == "Stalactite")
                     {
-                        obj.GetComponent<StalagmiteCollision>().Fall();
+                        obj.GetComponent<StalagmiteCollision>().StartFall();
                     }
                 }
             }
