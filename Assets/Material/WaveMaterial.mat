@@ -59,16 +59,19 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _ExternRingDiameter: 5
+    - _ExternRingDiameter: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.447
     - _GlossyReflections: 1
+    - _Hardness: 19.53
+    - _InnerRadius: -1.03
     - _InnerRingDiameter: 0
     - _MaximumFadeDistance: 19.85
     - _Metallic: 0
     - _MinimumRenderDistance: 120.48
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OuterRadius: 9.41
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -77,5 +80,6 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Distort: {r: 0.5, g: 0.5, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Position: {r: 0.93, g: -2.3, b: -0.77, a: 1}
