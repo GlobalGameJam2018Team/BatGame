@@ -31,6 +31,11 @@ public class SonarScript : MonoBehaviour {
         DrawFielOfView();
     }
 
+    public List<Transform> GetVisibleTargets()
+    {
+        return visible_targets;
+    }
+
     IEnumerator FindTargetsWithDelay(float delay)
     {
         while(true)
