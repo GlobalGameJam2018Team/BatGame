@@ -19,6 +19,7 @@ public class SonarScript : MonoBehaviour {
     Mesh view_mesh;
     [HideInInspector]
     public List<Transform> visible_targets = new List<Transform>();
+    public List<GameObject> visible_targets_objs = new List<GameObject>();
 
     private void Start()
     {
@@ -35,6 +36,10 @@ public class SonarScript : MonoBehaviour {
     public List<Transform> GetVisibleTargets()
     {
         return visible_targets;
+    }
+    public List<GameObject> GetVisibleTargetsObjs()
+    {
+        return visible_targets_objs;
     }
 
     IEnumerator FindTargetsWithDelay(float delay)
@@ -64,6 +69,7 @@ public class SonarScript : MonoBehaviour {
                 if(!Physics.Raycast(transform.position,dir_to_target,dist_to_target,obstacle_mask) || !Physics.Raycast(transform.position, dir_to_target, dist_to_target, walls_mask))
                 {
                     visible_targets.Add(target);
+                    //visible_targets_objs.Add(targets_in_view_rad[k].gameObject);
                 }
                 
             }
