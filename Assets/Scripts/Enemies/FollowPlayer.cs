@@ -7,6 +7,8 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
     private SonarScript sonar;
+    public SonarFx sonar_fx;
+
     public float speed = 1.0f;
     public float detection_distance = 10.0f;
     private bool chasing = false;
@@ -29,7 +31,7 @@ public class FollowPlayer : MonoBehaviour
         {
             List<Transform> transformations = sonar.GetVisibleTargets();
             foreach (Transform t in transformations)
-                if (t == transform)
+                if (t == transform && Input.GetKeyDown(KeyCode.UpArrow)&& sonar_fx.GetCDActive())
                 {
                     chasing = true;
                     random = Random.Range(0.0f, 1.0f);
