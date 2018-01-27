@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackBoard : MonoBehaviour {
+public class CheckPointLogic : MonoBehaviour {
 
-  
-    public int lastPointActive = 0;
-
-    public List<GameObject> savePoints = new List<GameObject>();
+    public int checkPointNumber = 0;
+    public bool activated = false;
 	// Use this for initialization
 	void Start () {
 		
