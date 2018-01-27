@@ -10,6 +10,7 @@ public class SonarScript : MonoBehaviour {
     public float sonar_angle = 90;
 
     public LayerMask target_mask;
+    public LayerMask second_target_mask;
     public LayerMask obstacle_mask;
     public LayerMask walls_mask;
     public float mesh_resolution;
@@ -54,6 +55,7 @@ public class SonarScript : MonoBehaviour {
     void FindVisibleTargets()
     {
         visible_targets.Clear();
+        visible_targets_objs.Clear();
 
         Collider[] targets_in_view_rad = Physics.OverlapSphere(transform.position, sonar_radius, target_mask);
 
@@ -69,9 +71,29 @@ public class SonarScript : MonoBehaviour {
                 if(!Physics.Raycast(transform.position,dir_to_target,dist_to_target,obstacle_mask) || !Physics.Raycast(transform.position, dir_to_target, dist_to_target, walls_mask))
                 {
                     visible_targets.Add(target);
-                    //visible_targets_objs.Add(targets_in_view_rad[k].gameObject);
+                    visible_targets_objs.Add(targets_in_view_rad[k].gameObject);
                 }
                 
+            }
+        }
+
+        targets_in_view_rad = Physics.OverlapSphere(transform.position, sonar_radius, second_target_mask);
+
+        for (int k = 0; k < targets_in_view_rad.Length; k++)
+        {
+            Transform target = targets_in_view_rad[k].transform;
+
+            Vector3 dir_to_target = (target.position - transform.position).normalized;
+            if (Vector3.Angle(transform.forward, dir_to_target) < sonar_angle / 2)
+            {
+                float dist_to_target = Vector3.Distance(transform.position, target.position);
+
+                if (!Physics.Raycast(transform.position, dir_to_target, dist_to_target, walls_mask))
+                {
+                    visible_targets.Add(target);
+                    visible_targets_objs.Add(targets_in_view_rad[k].gameObject);
+                }
+
             }
         }
     }
