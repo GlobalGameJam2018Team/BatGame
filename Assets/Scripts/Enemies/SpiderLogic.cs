@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class SpiderShoot : MonoBehaviour
+public class SpiderLogic : MonoBehaviour
 {
     public GameObject player;
     private NavMeshAgent agent;
@@ -25,7 +25,6 @@ public class SpiderShoot : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         camera = GetComponentInChildren<Camera>();
-        //  camera = GetComponent<Camera>();
         agent.isStopped = false;
 	}
 	

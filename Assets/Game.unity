@@ -854,6 +854,106 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470304224}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &726462550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 726462555}
+  - component: {fileID: 726462554}
+  - component: {fileID: 726462553}
+  - component: {fileID: 726462552}
+  - component: {fileID: 726462551}
+  m_Layer: 10
+  m_Name: Moving Obstacle Test (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!114 &726462551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726462550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92115397bd2c93a42b60a7a67346ae1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionA: {x: -16, y: 0.5, z: -8}
+  positionB: {x: 14, y: 0.8, z: -8}
+  min_distance: 1
+  speed: 1
+--- !u!23 &726462552
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726462550}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 77f6f7407b38be0429fe5e81fe78595b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &726462553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726462550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &726462554
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726462550}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &726462555
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726462550}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16, y: 0.5, z: -8}
+  m_LocalScale: {x: 5, y: 1, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731592513
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +1003,7 @@ NavMeshAgent:
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
@@ -973,7 +1073,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757353660
 GameObject:
@@ -1066,7 +1166,7 @@ Transform:
   m_Children:
   - {fileID: 1514346193}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -50.85, z: 0}
 --- !u!1 &759285184
 GameObject:
@@ -2001,15 +2101,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e024657966e0cd4d84b8ebefac7b865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min_int_value: 0
+  max_int_value: 1
+  min_ext_value: 0.6
+  max_ext_value: 12
   material_a: {fileID: 2100000, guid: 55216762b1cae894ba8d6142d4180e53, type: 2}
   mat_a_int_value: 0
+  mat_a_int_value_finish: 0
   mat_a_ext_value: 5
+  mat_a_ext_value_finish: 5
   material_b: {fileID: 2100000, guid: fc1b27c78c5cfb2428baeb7fe8fb9fbc, type: 2}
   mat_b_int_value: 0
+  mat_b_int_value_finish: 0
   mat_b_ext_value: 5
+  mat_b_ext_value_finish: 5
   material_c: {fileID: 2100000, guid: f5d2047a90be88e428b6bb06baac60b0, type: 2}
   mat_c_int_value: 0
+  mat_c_int_value_finish: 0
   mat_c_ext_value: 5
+  mat_c_ext_value_finish: 5
   loop_rate: 2.5
   animation_speed: 1
 --- !u!1 &1685018394
