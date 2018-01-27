@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class RatCollision : MonoBehaviour
 {
-    public GameObject player;
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 9)
         {
-            player.GetComponent<PlayerController2>().RatHunted();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController2>().RatHunted();
             DestroyObject(this.gameObject);
         }
     }
