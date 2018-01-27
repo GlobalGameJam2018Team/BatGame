@@ -13,7 +13,10 @@
 	}
 		SubShader{
 				Tags{ "RenderType" = "Opaque"  }
-
+				Stencil{
+			Ref 1
+			Comp equal
+		}
 				LOD 200
 
 
@@ -39,6 +42,7 @@
 		float _ExternRingDiameter;
 		float _MinimumRenderDistance;
 		float _MaximumFadeDistance;
+		
 
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
