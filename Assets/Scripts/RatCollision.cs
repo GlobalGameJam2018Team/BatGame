@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class RatCollision : MonoBehaviour
 {
+    AudioSource audio;
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 9)
         {
+            audio.Play();
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController2>().RatHunted();
-            DestroyObject(this.gameObject);
+            GetComponent<SpriteRenderer>().enabled=false;
+            GetComponent<BoxCollider>().enabled = false;
+            DestroyObject(this.gameObject, audio.clip.length);
         }
     }
 }
