@@ -29,4 +29,9 @@ public class MenuUI : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void OpenGGJSite()
+    {
+        Application.OpenURL("https://globalgamejam.org/");
+    }
 }
