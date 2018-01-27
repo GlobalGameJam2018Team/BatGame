@@ -1933,7 +1933,7 @@ MonoBehaviour:
   snake_img: {fileID: 2126143774}
   stalactite_img: {fileID: 1450377199}
   spikes_img: {fileID: 1711385663}
-  pause_menu_panel: {fileID: 122464760}
+  pause_menu_panel: {fileID: 0}
 --- !u!1 &717052298
 GameObject:
   m_ObjectHideFlags: 0
@@ -4599,7 +4599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer: {fileID: 1584621856}
   horizontal_speed: 10
-  force: 250
+  force: 300
 --- !u!54 &1584621863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4738,7 +4738,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -186938366
+  randomSeed: 52401678
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8566,7 +8566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2909ef054a808b643a20a66dc923b06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colddown: 5
+  colddown: 2.4
   pos_go: {fileID: 1584621859}
   sonarTime: 0
   _mode: 1
