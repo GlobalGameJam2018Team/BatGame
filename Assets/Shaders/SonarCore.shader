@@ -77,7 +77,7 @@ Shader "Custom/SonarFX"
 
 		//w /= 2;
 
-		w -= _Time.y * _SonarWaveParams.w;
+		w -= _SonarTime * _SonarWaveParams.w;
 
 		// Get modulo (w % params.z / params.z)
 		w /= _SonarWaveParams.z;
@@ -91,7 +91,7 @@ Shader "Custom/SonarFX"
 		w *= _SonarWaveParams.x;
 
 
-		if ((_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) < 1.0 && (_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) > 0.0) {
+		if ((_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) < 1.25 && (_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) > 0.0) {
 			o.Albedo = _SonarBaseColor;
 			o.Emission = _SonarWaveColor * w + _SonarAddColor;
 			o.Alpha =  (1 - w);
