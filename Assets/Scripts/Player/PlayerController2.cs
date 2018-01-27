@@ -14,12 +14,15 @@ public class PlayerController2 : MonoBehaviour {
     private float slow_timer = 0.0f;
     private float decrease_amount = 1.0f;
 
+    private int rats_hunted = 0;
+
     // Use this for initialization
     void Start ()
     {
         Physics.gravity = new Vector3(0, 0, -9.81f);
         phys = GetComponent<Rigidbody>();
         phys.velocity = new Vector3(1, 0, 0);
+        rats_hunted = 0;
     }
 	
 	// Update is called once per frame
@@ -71,5 +74,10 @@ public class PlayerController2 : MonoBehaviour {
         }
         slow_timer = time;
         slow_debuff = true;
+    }
+
+    public void RatHunted()
+    {
+        rats_hunted++;
     }
 }

@@ -87,4 +87,4 @@ Material:
     - _SonarBaseColor: {r: 0, g: 0, b: 0, a: 0}
     - _SonarWaveColor: {r: 1, g: 0, b: 0, a: 0}
     - _SonarWaveParams: {r: 27.82, g: 8.33, b: 14, a: 15}
-    - _SonarWaveVector: {r: 0.83999884, g: 0.5, b: -3.5433683, a: 1}
+    - _SonarWaveVector: {r: 0.51999915, g: 0.5, b: -1.3773223, a: 1}
