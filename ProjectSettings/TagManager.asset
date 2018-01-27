@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - BlackBoard
+  - Spider
+  - EnemyBat
+  - Snake
+  - Stalactite
+  - Spikes
   layers:
   - Default
   - TransparentFX
