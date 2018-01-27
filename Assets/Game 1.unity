@@ -211,7 +211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50.919003, y: 0, z: 0}
 --- !u!108 &135315268
 Light:
@@ -432,7 +432,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281036896
 GameObject:
@@ -514,7 +514,7 @@ Transform:
   m_Children:
   - {fileID: 162805015}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &281036901
 MonoBehaviour:
@@ -597,7 +597,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.019607844, g: 0.019607844, b: 0.019607844, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 726462553}
   - component: {fileID: 726462552}
   - component: {fileID: 726462551}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Moving Obstacle Test (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731592513
 GameObject:
@@ -977,6 +977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1584621854}
+  sonar_fx: {fileID: 1797993872}
   speed: 5
   detection_distance: 10
 --- !u!195 &731592515
@@ -1064,7 +1065,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757353660
 GameObject:
@@ -1200,7 +1201,7 @@ Transform:
   m_Children:
   - {fileID: 1514346193}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -50.85, z: 0}
 --- !u!1 &942820866
 GameObject:
@@ -1226,7 +1227,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 942820866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.568, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1516565493}
@@ -1492,7 +1493,7 @@ Transform:
   m_Children:
   - {fileID: 1074709571}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250733408
 GameObject:
@@ -1554,7 +1555,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351792893
 GameObject:
@@ -1693,7 +1694,7 @@ Transform:
   m_LocalScale: {x: 25.877703, y: 10, z: 19.127653}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381159210
 GameObject:
@@ -1792,7 +1793,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1381159216
 MonoBehaviour:
@@ -1965,7 +1966,7 @@ Transform:
   m_Children:
   - {fileID: 942820867}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560682050
 GameObject:
@@ -2097,7 +2098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba976474e77c1b4dad1b9eb7bcebb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonar_radius: 18.66
+  sonar_radius: 54.2
   sonar_angle: 360
   target_mask:
     serializedVersion: 2
@@ -2115,7 +2116,7 @@ MonoBehaviour:
   edge_resolution_iteration: 0
   edge_distance_limit: 0
   view_mesh_filter: {fileID: 101564327}
-  mask_cut: 0.44
+  mask_cut: 0.05
   visible_targets: []
   visible_targets_objs: []
 --- !u!212 &1584621856
@@ -2205,7 +2206,7 @@ Transform:
   - {fileID: 1797993867}
   - {fileID: 1560682051}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1584621860
 MonoBehaviour:
@@ -2235,7 +2236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 1584621856}
-  horizontal_speed: 3
+  horizontal_speed: 10
   force: 250
 --- !u!54 &1584621863
 Rigidbody:
@@ -2743,5 +2744,5 @@ Transform:
   - {fileID: 1685018395}
   - {fileID: 2058115156}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
