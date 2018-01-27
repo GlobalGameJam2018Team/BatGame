@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController2 : MonoBehaviour {
 
     Rigidbody phys;
-
+    public SpriteRenderer renderer;
     public float horizontal_speed = 3.0f;
     public float force = 500;
 
@@ -42,11 +42,16 @@ public class PlayerController2 : MonoBehaviour {
         if (Input.GetKey(KeyCode.RightArrow))
         {
             phys.velocity = new Vector3(horizontal_speed, 0, phys.velocity.z);
+            renderer.flipX = false;
+
         }
        
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             phys.velocity = new Vector3(-horizontal_speed, 0, phys.velocity.z);
+            renderer.flipX = true;
+
+
         }
         transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
