@@ -17,7 +17,7 @@ public class Lives : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 11|| collision.gameObject.layer == 10)
+        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 11)
         {
             lives--;
             if (lives < 0)

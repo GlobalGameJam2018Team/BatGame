@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22606435}
   - component: {fileID: 22606436}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (32)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 83888016}
   - component: {fileID: 83888017}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (14)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138756222}
   - component: {fileID: 138756223}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (21)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187802711}
   - component: {fileID: 187802712}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (33)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 369685801}
   - component: {fileID: 369685802}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (24)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -769,7 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376966184}
   - component: {fileID: 376966185}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (1)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -4425,7 +4425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485088534}
   - component: {fileID: 485088535}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (4)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -4682,7 +4682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668922153}
   - component: {fileID: 668922154}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (5)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -4723,7 +4723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676720000}
   - component: {fileID: 676720001}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (6)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -4764,7 +4764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 678287892}
   - component: {fileID: 678287893}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (10)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -4910,6 +4910,7 @@ MonoBehaviour:
   snake_img: {fileID: 2126143774}
   stalactite_img: {fileID: 1450377199}
   spikes_img: {fileID: 1711385663}
+  pause_menu_panel: {fileID: 0}
 --- !u!1 &717052298
 GameObject:
   m_ObjectHideFlags: 0
@@ -4919,7 +4920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717052299}
   - component: {fileID: 717052300}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (16)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5318,7 +5319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768904282}
   - component: {fileID: 768904283}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (11)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5359,7 +5360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866202452}
   - component: {fileID: 866202453}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (35)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5400,7 +5401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897128357}
   - component: {fileID: 897128358}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (28)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5586,7 +5587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966101718}
   - component: {fileID: 966101719}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (26)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5627,7 +5628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988838669}
   - component: {fileID: 988838670}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (12)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5668,7 +5669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995713714}
   - component: {fileID: 995713715}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (31)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5709,7 +5710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058819527}
   - component: {fileID: 1058819528}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (7)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5821,7 +5822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095156020}
   - component: {fileID: 1095156021}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (3)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -5965,7 +5966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152088713}
   - component: {fileID: 1152088714}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -6006,7 +6007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170581329}
   - component: {fileID: 1170581330}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (27)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -6047,7 +6048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182786162}
   - component: {fileID: 1182786163}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (2)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -10280,7 +10281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498733902}
   - component: {fileID: 1498733903}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (17)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -10321,7 +10322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505052137}
   - component: {fileID: 1505052138}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (20)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -13950,7 +13951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522031726}
   - component: {fileID: 1522031727}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (9)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -14379,7 +14380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer: {fileID: 1584621856}
   horizontal_speed: 10
-  force: 250
+  force: 300
 --- !u!54 &1584621863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14518,7 +14519,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1153859929
+  randomSeed: 2079458950
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -17834,7 +17835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590780576}
   - component: {fileID: 1590780577}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (19)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -17875,7 +17876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672049710}
   - component: {fileID: 1672049711}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (8)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18081,7 +18082,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1714136307}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Parent_collider
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18246,7 +18247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1789172309}
   - component: {fileID: 1789172310}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (34)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18398,7 +18399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2909ef054a808b643a20a66dc923b06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colddown: 5
+  colddown: 2.4
   pos_go: {fileID: 1584621859}
   sonarTime: 0
   _mode: 1
@@ -18422,7 +18423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799995835}
   - component: {fileID: 1799995836}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (22)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18463,7 +18464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806765006}
   - component: {fileID: 1806765007}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (25)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18572,7 +18573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936994379}
   - component: {fileID: 1936994380}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (29)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18613,7 +18614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977690549}
   - component: {fileID: 1977690550}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (30)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18752,7 +18753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059476184}
   - component: {fileID: 2059476185}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (13)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18793,7 +18794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075147503}
   - component: {fileID: 2075147504}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (18)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18865,7 +18866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124361631}
   - component: {fileID: 2124361632}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (23)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -18974,7 +18975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142049241}
   - component: {fileID: 2142049242}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Level_colision (15)
   m_TagString: Spikes
   m_Icon: {fileID: 0}
