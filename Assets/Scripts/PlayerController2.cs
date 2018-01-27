@@ -45,7 +45,7 @@ public class PlayerController2 : MonoBehaviour {
         {
             phys.velocity = new Vector3(-horizontal_speed, 0, phys.velocity.z);
         }
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         //Slowing debuff
         if (slow_debuff)
