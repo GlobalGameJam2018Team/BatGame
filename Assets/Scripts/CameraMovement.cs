@@ -10,8 +10,7 @@ public class CameraMovement : MonoBehaviour
     public float minRange = 1.0f;
     public float maxRange = 4.0f;
     void Update()
-    {
-        
+    {        
         Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y + camera_distance_to_player, player.transform.position.z);
         Vector3 diff = playerPos - transform.position;
 

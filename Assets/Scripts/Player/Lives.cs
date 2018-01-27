@@ -9,7 +9,7 @@ public class Lives : MonoBehaviour {
     public LayerMask enemies;
     public BlackBoard bBoard;
     Animator anim;
-
+    bool can_die = true;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
@@ -17,8 +17,9 @@ public class Lives : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 11)
+        if ((collision.gameObject.layer == 10 || collision.gameObject.layer == 11) && can_die)
         {
+            can_die = false;
             lives--;
             if (lives < 0)
             {
@@ -51,6 +52,7 @@ public class Lives : MonoBehaviour {
                 GetComponent<Rigidbody>().useGravity = true;
                 Vector3 savePos = bBoard.savePoints[bBoard.lastPointActive].transform.position;
                 transform.position = new Vector3(savePos.x, 0, savePos.z);
+                can_die = true;
             }
         }
     }

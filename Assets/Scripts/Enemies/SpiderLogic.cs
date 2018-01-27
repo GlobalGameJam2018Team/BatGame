@@ -11,6 +11,7 @@ public class SpiderLogic : MonoBehaviour
     public Vector3 positionA;
     public Vector3 positionB;
     private Vector3 position_temp;
+    private int direction_x = 1;
     public float spider_speed = 1.0f;
     public float min_distance = 1.0f;
 
@@ -26,6 +27,7 @@ public class SpiderLogic : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         camera = GetComponentInChildren<Camera>();
         agent.isStopped = false;
+        agent.updateRotation = false;
 	}
 	
 	void Update ()
@@ -35,11 +37,16 @@ public class SpiderLogic : MonoBehaviour
         {
             Vector3 actual_pos = transform.position;
             actual_pos.y = 0;
-            //For if we need to avoid the rotation: gameObject.transform.eulerAngles = new Vector3(0, 90, 0);
             if ((actual_pos - positionA).magnitude <= min_distance)
+            {
+                direction_x = -1;
                 GoToPos(positionB);
+            }
             else if ((actual_pos - positionB).magnitude <= min_distance)
+            {
+                direction_x = 1;
                 GoToPos(positionA);
+            }
         }
         //---------------
 
@@ -77,6 +84,8 @@ public class SpiderLogic : MonoBehaviour
         else
             shoot_timer = 0.0f;
         //---------------
+        gameObject.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        gameObject.transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
     void GoToPos(Vector3 new_pos)
