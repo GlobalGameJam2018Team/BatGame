@@ -19,7 +19,7 @@ public class SonarInput : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            sonarTime = 0.0f;
+            sonarTime = 1000.0f;
            
         }
         sonarTime += Time.deltaTime;

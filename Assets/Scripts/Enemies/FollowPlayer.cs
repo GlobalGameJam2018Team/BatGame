@@ -32,7 +32,7 @@ public class FollowPlayer : MonoBehaviour
         {
             List<Transform> transformations = sonar.GetVisibleTargets();
             foreach (Transform t in transformations)
-                if (t == transform && Input.GetKeyDown(KeyCode.UpArrow)&& sonar_fx.GetCDActive())
+                if (t == transform && Input.GetKeyDown(KeyCode.Space)&& sonar_fx.GetCDActive())
                 {
                     chasing = true;
                     random = Random.Range(0.0f, 1.0f);
