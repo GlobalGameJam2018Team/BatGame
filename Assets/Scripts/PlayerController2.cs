@@ -32,7 +32,7 @@ public class PlayerController2 : MonoBehaviour {
 
         if (Input.GetKeyDown("space"))
         {
-            phys.velocity = new Vector3(phys.velocity.x, 0, phys.velocity.z);
+            phys.velocity = new Vector3(phys.velocity.x, phys.velocity.y, 0);
             phys.AddForce(new Vector3(0, 0, force));            
         }
      
