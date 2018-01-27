@@ -24,7 +24,9 @@ public class SpiderShoot : MonoBehaviour
     void Start ()
     {
         agent = GetComponent<NavMeshAgent>();
-        camera = GetComponent<Camera>();
+        camera = GetComponentInChildren<Camera>();
+        //  camera = GetComponent<Camera>();
+        agent.isStopped = false;
 	}
 	
 	void Update ()
@@ -35,9 +37,9 @@ public class SpiderShoot : MonoBehaviour
             Vector3 actual_pos = transform.position;
             actual_pos.y = 0;
             //For if we need to avoid the rotation: gameObject.transform.eulerAngles = new Vector3(0, 90, 0);
-            if ((actual_pos - positionA).magnitude < min_distance)
+            if ((actual_pos - positionA).magnitude <= min_distance)
                 GoToPos(positionB);
-            else if ((actual_pos - positionB).magnitude < min_distance)
+            else if ((actual_pos - positionB).magnitude <= min_distance)
                 GoToPos(positionA);
         }
         //---------------
@@ -47,14 +49,14 @@ public class SpiderShoot : MonoBehaviour
         {
             player_detected = true;
             position_temp = agent.destination;
-            agent.Stop();
+            agent.isStopped = true;
             Debug.Log("DETECTED");
         }
         else
         {
             if (player_detected == true)
             {
-                agent.Resume();
+                agent.isStopped = false;
                 GoToPos(position_temp);
             }
             player_detected = false;
