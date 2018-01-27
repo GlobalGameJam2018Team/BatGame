@@ -2141,7 +2141,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445609389}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2377,6 +2377,9 @@ MonoBehaviour:
   obstacle_mask:
     serializedVersion: 2
     m_Bits: 256
+  walls_mask:
+    serializedVersion: 2
+    m_Bits: 1024
   mesh_resolution: 3
   edge_resolution_iteration: 0
   edge_distance_limit: 0
@@ -2703,7 +2706,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1797993866}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
   m_LocalScale: {x: 4.49, y: 1.4546276, z: 4.32}
   m_Children: []
   m_Father: {fileID: 1584621859}

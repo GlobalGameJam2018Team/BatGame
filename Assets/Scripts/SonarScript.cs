@@ -11,6 +11,7 @@ public class SonarScript : MonoBehaviour {
 
     public LayerMask target_mask;
     public LayerMask obstacle_mask;
+    public LayerMask walls_mask;
     public float mesh_resolution;
     public int edge_resolution_iteration;
     public float edge_distance_limit;
@@ -60,10 +61,11 @@ public class SonarScript : MonoBehaviour {
             {
                 float dist_to_target = Vector3.Distance(transform.position, target.position);
 
-                if(!Physics.Raycast(transform.position,dir_to_target,dist_to_target,obstacle_mask))
+                if(!Physics.Raycast(transform.position,dir_to_target,dist_to_target,obstacle_mask) || !Physics.Raycast(transform.position, dir_to_target, dist_to_target, walls_mask))
                 {
                     visible_targets.Add(target);
                 }
+                
             }
         }
     }
@@ -134,7 +136,7 @@ public class SonarScript : MonoBehaviour {
 
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, direction, out hit, sonar_radius, obstacle_mask))
+        if (Physics.Raycast(transform.position, direction, out hit, sonar_radius, obstacle_mask) || Physics.Raycast(transform.position, direction, out hit, sonar_radius, walls_mask))
         {
             return new ViewCastInfo(true, hit.point, hit.distance, global_angle);
         }
