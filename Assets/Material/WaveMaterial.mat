@@ -74,6 +74,7 @@ Material:
     - _OuterRadius: 9.41
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
+    - _SonarTime: 3.0137515
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
@@ -87,4 +88,4 @@ Material:
     - _SonarBaseColor: {r: 0, g: 0, b: 0, a: 0}
     - _SonarWaveColor: {r: 1, g: 0, b: 0, a: 0}
     - _SonarWaveParams: {r: 27.82, g: 8.33, b: 14, a: 15}
-    - _SonarWaveVector: {r: 0.51999915, g: 0.5, b: -1.3773223, a: 1}
+    - _SonarWaveVector: {r: -7.64831, g: 0.5, b: 1.331979, a: 1}

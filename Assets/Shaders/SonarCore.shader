@@ -29,6 +29,8 @@ Shader "Custom/SonarFX"
 		_SonarWaveParams("Wave Params", Vector) = (1, 20, 20, 10)
 		_SonarWaveVector("Wave Vector", Vector) = (0, 0, 1, 0)
 		_SonarAddColor("Add Color",   Color) = (0, 0, 0, 0)
+		_SonarTime("Sonar Time", Float) = 0
+
 	}
 		SubShader
 	{
@@ -55,6 +57,7 @@ Shader "Custom/SonarFX"
 	float4 _SonarWaveParams; // Amp, Exp, Interval, Speed
 	float3 _SonarWaveVector;
 	float3 _SonarAddColor;
+	float _SonarTime;
 
 	void surf(Input IN, inout SurfaceOutput o)
 	{
@@ -64,7 +67,16 @@ Shader "Custom/SonarFX"
 		float w = length(IN.worldPos - _SonarWaveVector);
 #endif
 
-		// Moving wave.
+
+		
+		//w = sin(length(IN.worldPos - _SonarWaveVector) - _Time.y * _SonarWaveParams.w);
+
+
+		//w += sin(length(IN.worldPos - _SonarWaveVector) - 1.34*_Time.y * _SonarWaveParams.w);
+		//w += sin(length(IN.worldPos - _SonarWaveVector) - 3.1*_Time.y * _SonarWaveParams.w);
+
+		//w /= 2;
+
 		w -= _Time.y * _SonarWaveParams.w;
 
 		// Get modulo (w % params.z / params.z)
@@ -78,10 +90,25 @@ Shader "Custom/SonarFX"
 		// Amplify.
 		w *= _SonarWaveParams.x;
 
+
+		if ((_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) < 1.0 && (_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) > 0.0) {
+			o.Albedo = _SonarBaseColor;
+			o.Emission = _SonarWaveColor * w + _SonarAddColor;
+			o.Alpha =  (1 - w);
+		}
+		else
+			o.Alpha = 1;
+
+
+		/*
+		// Moving wave.
+		
+
 		// Apply to the surface.
 		o.Albedo = _SonarBaseColor;
 		o.Emission = _SonarWaveColor * w + _SonarAddColor;
 		o.Alpha = _SonarWaveColor * (1-w);
+		*/
 	}
 
 	ENDCG

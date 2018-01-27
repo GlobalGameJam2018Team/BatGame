@@ -2434,8 +2434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2909ef054a808b643a20a66dc923b06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat: {fileID: 2100000, guid: 55216762b1cae894ba8d6142d4180e53, type: 2}
   pos_go: {fileID: 1584621859}
+  sonarTime: 0
   _mode: 1
   _direction: {x: 0, y: 0, z: 1}
   _origin: {x: 0, y: 0, z: 0}
