@@ -24,4 +24,9 @@ public class MenuUI : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
