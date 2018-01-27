@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class BlackBoard : MonoBehaviour {
 
-    public Vector2 initialPos = new Vector2(0, 0);
-    public Vector2 savePointPos = new Vector2(0, 0);
-    public bool savePointActive = false;
+  
+    public int lastPointActive = 0;
 
-
+    public List<Vector2> savePoints = new List<Vector2>();
 	// Use this for initialization
 	void Start () {
 		

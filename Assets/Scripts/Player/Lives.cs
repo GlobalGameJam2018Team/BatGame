@@ -15,14 +15,12 @@ public class Lives : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+       
         if(collision.gameObject.layer == 10 || collision.gameObject.layer ==11)
         {
             lives--;
-            if (!bBoard.savePointActive)
-                transform.position = new Vector3(bBoard.initialPos.x, 0, bBoard.initialPos.y);
-            else
-                transform.position = new Vector3(bBoard.savePointPos.x, 0, bBoard.savePointPos.y);
-            
+            transform.position = new Vector3(bBoard.savePoints[bBoard.lastPointActive].x, 0, bBoard.savePoints[bBoard.lastPointActive].y);
+          
         }
 
     }
