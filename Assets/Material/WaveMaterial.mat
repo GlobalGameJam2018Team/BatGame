@@ -59,11 +59,11 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _ExternRingDiameter: 0.36
+    - _ExternRingDiameter: 4.08
     - _GlossMapScale: 1
     - _Glossiness: 0.447
     - _GlossyReflections: 1
-    - _InnerRingDiameter: 0.32
+    - _InnerRingDiameter: 2.91
     - _MaximumFadeDistance: 19.85
     - _Metallic: 0
     - _MinimumRenderDistance: 122.34
@@ -78,3 +78,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Position: {r: 0.93, g: -2.3, b: -0.77, a: 1}

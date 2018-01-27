@@ -2,22 +2,21 @@
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
-		_Glossiness ("Smoothness", Range(0,1)) = 0.5
-		_Metallic ("Metallic", Range(0,1)) = 0.0
-		_InnerRingDiameter ("Inner dist", Float) = 0
+		_Glossiness("Smoothness", Range(0,1)) = 0.5
+		_Metallic("Metallic", Range(0,1)) = 0.0
+		_InnerRingDiameter("Inner dist", Float) = 0
 		_ExternRingDiameter("Extern dist", Float) = 0
-		_MinimumRenderDistance ("Min render dist",Float) = 10
-		_MaximumFadeDistance ("Max fade dist", Float) = 20
+		_MinimumRenderDistance("Min render dist",Float) = 10
+		_MaximumFadeDistance("Max fade dist", Float) = 20
+
+		_Position("Target position", Vector) = (3,3,3)
+
 	}
 		SubShader{
 				Tags{ "RenderType" = "Opaque"  }
 
 				LOD 200
 
-			Stencil{
-			Ref 1
-			Pass replace
-		}
 
 		CGPROGRAM
 		// Physically based Standard lighting model, and enable shadows on all light types
@@ -41,6 +40,7 @@
 		float _ExternRingDiameter;
 		float _MinimumRenderDistance;
 		float _MaximumFadeDistance;
+		Vector _Position;
 
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -52,10 +52,10 @@
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
 			float distance = length(_WorldSpaceCameraPos - IN.worldPos);
-			float2 position = float2((0.5 - IN.uv_MainTex.x) * 2, (0.5 - IN.uv_MainTex.y) * 2);
+			float2 position = float2(_Position.x, _Position.y);
 			float ringDistanceFromCenter = sqrt(position.x * position.x + position.y * position.y) * _ExternRingDiameter;
 			
-			//clip(1 - ringDistanceFromCenter);
+			clip(1 - ringDistanceFromCenter);
 			clip(ringDistanceFromCenter - _InnerRingDiameter);
 			
 			//fixed3 color = fi
