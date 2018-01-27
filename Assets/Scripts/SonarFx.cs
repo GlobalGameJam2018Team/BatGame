@@ -21,6 +21,7 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Camera))]
 public class SonarFx : MonoBehaviour
@@ -92,6 +93,8 @@ public class SonarFx : MonoBehaviour
     int addColorID;
     Vector3 waveVector;
 
+    public SonarScript sonar_script;
+
     void Awake()
     {
         baseColorID = Shader.PropertyToID("_SonarBaseColor");
@@ -123,7 +126,18 @@ public class SonarFx : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             sonarTime = 0.0f;
+            List<GameObject> objs = sonar_script.GetVisibleTargetsObjs();
 
+            if (objs.Count > 0)
+            {
+                foreach (GameObject obj in objs)
+                {
+                    if (obj.tag == "Stalagmite")
+                    {
+                        obj.GetComponent<StalagmiteCollision>().Fall();
+                    }
+                }
+            }
         }
         sonarTime += Time.deltaTime;
 

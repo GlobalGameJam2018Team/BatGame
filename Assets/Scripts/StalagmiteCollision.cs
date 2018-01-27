@@ -22,18 +22,21 @@ public class StalagmiteCollision : MonoBehaviour {
     {
         if (collision.gameObject.layer == 9)
         {
-            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezePositionY;
-            this.GetComponent<Rigidbody>().useGravity = true;
-            this.GetComponent<Rigidbody>().isKinematic = false;
+            Fall();
 
             collision.gameObject.GetComponent<Lives>().lives--;
             
             BlackBoard bb = GameObject.FindGameObjectWithTag("BlackBoard").GetComponent<BlackBoard>();
             Vector3 pos = bb.savePoints[bb.lastPointActive].transform.position;
             collision.gameObject.transform.position = new Vector3(pos.x, 0, pos.z);
-            
-            //DestroyObject(this.gameObject);
         }
+    }
+
+    public void Fall()
+    {
+        this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezePositionY;
+        this.GetComponent<Rigidbody>().useGravity = true;
+        this.GetComponent<Rigidbody>().isKinematic = false;
     }
 }
