@@ -137,7 +137,7 @@ public class SonarFx : MonoBehaviour
             {
                 foreach (GameObject obj in objs)
                 {
-                    if (obj.tag == "Stalagmite")
+                    if (obj.tag == "Stalactite")
                     {
                         obj.GetComponent<StalagmiteCollision>().Fall();
                     }

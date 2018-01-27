@@ -15,6 +15,7 @@ public class FollowPlayer : MonoBehaviour
 
     NavMeshAgent agent;
     private float timer = 0.0f;
+    Animator anim;
 
     //Random between chasing using a pathfinding or just stright in a line to create variants
     private float random = 0.0f;
