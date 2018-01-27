@@ -22,7 +22,7 @@ public class Lives : MonoBehaviour {
             lives--;
             if (lives < 0)
             {
-                GameObject.Find("Canvas").GetComponent<WinLoseUI>().LostGame(collision.gameObject);
+                GameObject.Find("Canvas").GetComponent<GameUI>().LostGame(collision.gameObject);
             }
             else
             {
