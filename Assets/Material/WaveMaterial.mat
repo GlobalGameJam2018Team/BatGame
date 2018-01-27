@@ -84,8 +84,8 @@ Material:
     - _Distort: {r: 0.5, g: 0.5, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Position: {r: 0.93, g: -2.3, b: -0.77, a: 1}
-    - _SonarAddColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SonarBaseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SonarWaveColor: {r: 1, g: 0, b: 0, a: 0}
+    - _SonarAddColor: {r: 0, g: 0, b: 0, a: 0.266}
+    - _SonarBaseColor: {r: 0.19852942, g: 0.19852942, b: 0.19852942, a: 0}
+    - _SonarWaveColor: {r: 1, g: 0, b: 0, a: 1}
     - _SonarWaveParams: {r: 1.8, g: 6.9, b: 11.2, a: 25.6}
     - _SonarWaveVector: {r: -7.64831, g: 0.5, b: 1.331979, a: 1}

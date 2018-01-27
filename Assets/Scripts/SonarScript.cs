@@ -143,7 +143,7 @@ public class SonarScript : MonoBehaviour {
         vertices[0] = Vector3.zero;
         for(int i = 0; i < vertex_count - 1; i++)
         {
-            vertices[i + 1] = transform.InverseTransformPoint(view_points[i])+Vector3.forward*mask_cut;
+            vertices[i + 1] = transform.InverseTransformPoint(view_points[i]);
 
             if (i < vertex_count - 2)
             {
