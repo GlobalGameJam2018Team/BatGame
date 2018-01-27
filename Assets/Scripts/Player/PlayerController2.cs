@@ -37,13 +37,13 @@ public class PlayerController2 : MonoBehaviour {
         gameObject.transform.eulerAngles = new Vector3(0, 0, -angle);
         */
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKey(KeyCode.UpArrow) && !anim.GetBool("dead"))
         {
             phys.velocity = new Vector3(phys.velocity.x, phys.velocity.y, 0);
             phys.AddForce(new Vector3(0, 0, force));            
         }
-     
-        if (Input.GetKey(KeyCode.RightArrow)&&!anim.GetBool("dead"))
+
+        if (Input.GetKey(KeyCode.RightArrow) && !anim.GetBool("dead"))
         {
             phys.velocity = new Vector3(horizontal_speed, 0, phys.velocity.z);
             renderer.flipX = false;

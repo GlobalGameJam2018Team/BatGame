@@ -127,7 +127,7 @@ public class SonarFx : MonoBehaviour
         Shader.SetGlobalColor(addColorID, _addColor);
         rend.material.SetVector("_SonarWaveVector", new Vector4(pos_go.position.x, pos_go.position.y, pos_go.position.z,1));
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)&& cd_active)
+        if (Input.GetKeyDown(KeyCode.Space)&& cd_active)
         {
             cd_active = false;
             sonarTime = 0.0f;
