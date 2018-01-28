@@ -65,7 +65,7 @@ Material:
     - _GlossyReflections: 1
     - _Hardness: 19.53
     - _InnerRadius: -1.03
-    - _InnerRingDiameter: -20.012241
+    - _InnerRingDiameter: 0
     - _MaximumFadeDistance: 19.85
     - _Metallic: 0
     - _MinimumRenderDistance: 120.48

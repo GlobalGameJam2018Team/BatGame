@@ -176,6 +176,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -322,6 +327,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -387,6 +397,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -566,6 +581,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -631,6 +651,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -792,6 +817,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -845,6 +875,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -1020,6 +1055,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -1132,6 +1172,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -1310,9 +1355,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 325131080}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Stalactites
-  m_TagString: Untagged
+  m_TagString: Stalactite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,6 +1704,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -1712,6 +1762,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -1909,6 +1964,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -2020,6 +2080,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -2266,6 +2331,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -2421,6 +2491,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -5926,6 +6001,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -5996,6 +6076,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -6249,6 +6334,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -6302,6 +6392,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -9888,6 +9983,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -10062,14 +10162,6 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -10257,6 +10349,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -10363,6 +10460,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -10692,6 +10794,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -10894,6 +11001,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -11000,6 +11112,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -11188,6 +11305,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -11241,6 +11363,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -11342,6 +11469,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -11395,6 +11527,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -11570,6 +11707,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -11623,6 +11765,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -11794,7 +11941,7 @@ GameObject:
   - component: {fileID: 961977163}
   m_Layer: 9
   m_Name: Bat (2)
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15399,6 +15546,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -15505,6 +15657,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -15693,6 +15850,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -15809,6 +15971,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -15951,6 +16118,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -16057,6 +16229,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -20256,6 +20433,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -20488,6 +20670,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -20781,6 +20968,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -20847,6 +21039,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -20858,9 +21055,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1487764363}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Stalagmites
-  m_TagString: Untagged
+  m_TagString: Stalactite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21328,6 +21525,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -21475,6 +21677,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -21636,6 +21843,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -21681,7 +21893,7 @@ MonoBehaviour:
   sonar_angle: 360
   target_mask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 18432
   obstacle_mask:
     serializedVersion: 2
     m_Bits: 256
@@ -25507,6 +25719,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -25711,6 +25928,11 @@ Prefab:
       propertyPath: m_Name
       value: Stalactite (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -25769,6 +25991,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -25945,6 +26172,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -25998,6 +26230,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -26325,6 +26562,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180.483
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -26390,6 +26632,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -26691,6 +26938,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.000002
       objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
   m_IsPrefabParent: 0
@@ -26761,6 +27013,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -26873,6 +27130,11 @@ Prefab:
     - target: {fileID: 1007172415510474, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_Name
       value: Stalactite (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
@@ -30439,6 +30701,11 @@ Prefab:
     - target: {fileID: 4411512738314908, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}
       propertyPath: m_LocalScale.z
       value: 3.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879227983526870, guid: 7691fe3297de9c043846336d9fd13d8c,
+        type: 2}
+      propertyPath: down_estalagmite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7691fe3297de9c043846336d9fd13d8c, type: 2}

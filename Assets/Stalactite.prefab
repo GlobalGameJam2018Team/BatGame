@@ -41,9 +41,10 @@ GameObject:
   - component: {fileID: 65489209293285610}
   - component: {fileID: 212796519736263332}
   - component: {fileID: 54478012280240848}
+  - component: {fileID: 114675859570261856}
   m_Layer: 14
   m_Name: Stalactite_B
-  m_TagString: Untagged
+  m_TagString: Stalactite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,9 +60,10 @@ GameObject:
   - component: {fileID: 65962428154423662}
   - component: {fileID: 212069527306389628}
   - component: {fileID: 54858633343048160}
+  - component: {fileID: 114770886540345282}
   m_Layer: 14
   m_Name: Stalactite_A
-  m_TagString: Untagged
+  m_TagString: Stalactite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,9 +79,10 @@ GameObject:
   - component: {fileID: 65370548885303806}
   - component: {fileID: 212179746622781622}
   - component: {fileID: 54109508312000836}
+  - component: {fileID: 114122529773789738}
   m_Layer: 14
   m_Name: Stalactite_C
-  m_TagString: Untagged
+  m_TagString: Stalactite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,8 +119,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007172415510474}
-  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.09, y: -1.07, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.61, y: -15.08, z: 3.21}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4385493911479350}
@@ -249,6 +252,39 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114122529773789738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648291263570112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f30554404df754eb0f3f18bc2cffa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114675859570261856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018244554921622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f30554404df754eb0f3f18bc2cffa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114770886540345282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1566829891883002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f30554404df754eb0f3f18bc2cffa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114879227983526870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115a71229a2df8b40a4595bf37b78472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  down_estalagmite: 0
   stalagmite_a: {fileID: 1566829891883002}
   stalagmite_b: {fileID: 1018244554921622}
   stalagmite_c: {fileID: 1648291263570112}

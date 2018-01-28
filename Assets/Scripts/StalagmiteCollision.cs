@@ -15,7 +15,9 @@ public class StalagmiteCollision : MonoBehaviour {
 
     GameObject player;
     STALACTITE_STATE state = STALACTITE_STATE.IDLE_ST;
-
+    bool hited = false;
+    public bool down_estalagmite = false;
+    
     public GameObject stalagmite_a;
     Vector3 stalagmite_a_init_pos;
     Quaternion stalagmite_a_init_rot;
@@ -30,8 +32,8 @@ public class StalagmiteCollision : MonoBehaviour {
 
     public float fall_delay = 0.5f;
     float cur_delay = 0.0f;
-    public float reset_time = 2.5f;
-    float cur_reset_time = 0.0f;
+
+
 
     // Use this for initialization
     void Start ()
@@ -48,24 +50,23 @@ public class StalagmiteCollision : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(state == STALACTITE_STATE.READY_TO_FALL_ST)
+        if (state == STALACTITE_STATE.READY_TO_FALL_ST)
         {
             cur_delay += Time.deltaTime;
-            if(cur_delay >= fall_delay)
+            if (cur_delay >= fall_delay)
             {
                 state = STALACTITE_STATE.FALLING_ST;
                 cur_delay = 0.0f;
                 Fall();
             }
         }
-        else if(state == STALACTITE_STATE.FALLING_ST)
+        else if (state == STALACTITE_STATE.FALLING_ST)
         {
-            cur_reset_time += Time.deltaTime;
-            if (cur_reset_time >= reset_time)
-            {
-                state = STALACTITE_STATE.IDLE_ST;
-                cur_reset_time = 0.0f;
 
+            float val = Mathf.Abs(Vector3.Magnitude(player.transform.position - this.transform.position));
+
+            if (val >= 35)
+            {
                 stalagmite_a.SetActive(false);
                 stalagmite_a.transform.position = stalagmite_a_init_pos;
                 stalagmite_a.transform.rotation = stalagmite_a_init_rot;
@@ -80,6 +81,8 @@ public class StalagmiteCollision : MonoBehaviour {
 
                 this.GetComponent<SpriteRenderer>().enabled = true;
                 this.GetComponent<BoxCollider>().enabled = true;
+
+                hited = false;
             }
         }
 	}
@@ -88,7 +91,11 @@ public class StalagmiteCollision : MonoBehaviour {
     {
         if (collision.gameObject.layer == 9)
         {
-            StartFall();
+            if (!down_estalagmite)
+            {
+                hited = true;
+                StartFall();
+            }
 
             collision.gameObject.GetComponent<Lives>().lives--;
             
@@ -100,7 +107,16 @@ public class StalagmiteCollision : MonoBehaviour {
 
     public void StartFall()
     {
-        state = STALACTITE_STATE.READY_TO_FALL_ST;
+        float val = Mathf.Abs(Vector3.Magnitude(player.transform.position - this.transform.position));
+
+        if (val <= 20)
+        {
+            if (!down_estalagmite)
+            {
+                if (hited) state = STALACTITE_STATE.READY_TO_FALL_ST;
+                else hited = true;
+            }
+        }
     }
 
     public void Fall()
