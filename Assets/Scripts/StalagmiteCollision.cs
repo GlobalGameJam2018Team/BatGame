@@ -96,12 +96,6 @@ public class StalagmiteCollision : MonoBehaviour {
                 hited = true;
                 StartFall();
             }
-
-            collision.gameObject.GetComponent<Lives>().lives--;
-            
-            BlackBoard bb = GameObject.FindGameObjectWithTag("BlackBoard").GetComponent<BlackBoard>();
-            Vector3 pos = bb.savePoints[bb.lastPointActive].transform.position;
-            collision.gameObject.transform.position = new Vector3(pos.x, 0, pos.z);
         }
     }
 
