@@ -83,7 +83,7 @@ public class SpiderLogic : MonoBehaviour
                 audio.Play();
                 shoot_timer = 0.0f;
                 GameObject projectile = GameObject.Instantiate(spider_projectile);
-                projectile.transform.position = transform.position;
+                projectile.transform.position = new Vector3(transform.position.x, 0.1f, transform.position.z) + 2.0f * transform.forward;
                 projectile.SetActive(true);
             }
             shoot_timer += Time.deltaTime;
@@ -98,6 +98,6 @@ public class SpiderLogic : MonoBehaviour
     void GoToPos(Vector3 new_pos)
     {
         agent.speed = spider_speed;
-        agent.SetDestination(new_pos);
+        agent.SetDestination(new Vector3(new_pos.x, 0.0f, new_pos.z));
     }
 }
