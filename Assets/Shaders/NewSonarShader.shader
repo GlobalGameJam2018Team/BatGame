@@ -20,7 +20,7 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-Shader "Custom/SonarFx"
+Shader "Custom/NewSonarFX"
 {
 	Properties
 	{
@@ -59,7 +59,6 @@ Shader "Custom/SonarFx"
 	float3 _SonarAddColor;
 	float _SonarTime;
 
-
 	void surf(Input IN, inout SurfaceOutput o)
 	{
 #ifdef SONAR_DIRECTIONAL
@@ -91,6 +90,7 @@ Shader "Custom/SonarFx"
 		// Amplify.
 		w *= _SonarWaveParams.x;
 
+
 		if ((_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) < 1.25 && (_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) > 0.0) {
 			o.Albedo = _SonarBaseColor;
 			o.Emission = _SonarWaveColor * w + _SonarAddColor;
@@ -98,11 +98,7 @@ Shader "Custom/SonarFx"
 		}
 		else
 			o.Alpha = 1;
-		/*
-			o.Albedo = _SonarBaseColor;
-			o.Emission = _SonarWaveColor * w + _SonarAddColor;
-			o.Alpha =  (1 - w);*/
-	
+
 
 		/*
 		// Moving wave.

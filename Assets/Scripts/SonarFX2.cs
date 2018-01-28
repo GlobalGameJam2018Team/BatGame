@@ -127,9 +127,35 @@ public class SonarFX2 : MonoBehaviour
         Shader.SetGlobalColor(addColorID, _addColor);
         rend.material.SetVector("_SonarWaveVector", new Vector4(pos_go.position.x, pos_go.position.y, pos_go.position.z, 1));
 
-    
+        if (Input.GetKeyDown(KeyCode.Space) && cd_active)
+        {
+            cd_active = false;
+            sonarTime = 0.0f;
+            List<GameObject> objs = sonar_script.GetVisibleTargetsObjs();
 
-        rend.material.SetFloat("_SonarTime", Time.time);
+            if (objs.Count > 0)
+            {
+                foreach (GameObject obj in objs)
+                {
+                    if (obj.tag == "Stalactite")
+                    {
+                        obj.GetComponent<StalagmiteCollision>().StartFall();
+                    }
+                }
+            }
+        }
+        if (!cd_active)
+        {
+            current_cd_time += Time.deltaTime;
+            if (current_cd_time > colddown)
+            {
+                current_cd_time = 0.0f;
+                cd_active = true;
+            }
+        }
+        sonarTime += Time.deltaTime;
+
+        rend.material.SetFloat("_SonarTime", sonarTime);
         var param = new Vector4(_waveAmplitude, _waveExponent, _waveInterval, _waveSpeed);
         Shader.SetGlobalVector(waveParamsID, param);
 

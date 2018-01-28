@@ -91,13 +91,10 @@ Shader "Custom/SonarFX"
 		w *= _SonarWaveParams.x;
 
 
-		if ((_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) < 1.25 && (_SonarTime - (length(IN.worldPos - _SonarWaveVector) / 30)) > 0.0) {
-			o.Albedo = _SonarBaseColor;
+		o.Albedo = _SonarBaseColor;
 			o.Emission = _SonarWaveColor * w + _SonarAddColor;
-			o.Alpha =  (1 - w);
-		}
-		else
-			o.Alpha = 1;
+			o.Alpha = 1;// (1 - w);
+		
 
 
 		/*
