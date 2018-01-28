@@ -18,6 +18,7 @@ public class SpiderLogic : MonoBehaviour
     private Camera camera;
     private bool player_detected = false;
 
+    private Animator anim;
     public GameObject spider_projectile;
     public float shoot_cooldown = 2.0f;
     private float shoot_timer = 0.0f;
@@ -26,6 +27,7 @@ public class SpiderLogic : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         camera = GetComponentInChildren<Camera>();
+        anim = GetComponentInChildren<Animator>();
         agent.isStopped = false;
         agent.updateRotation = false;
 	}
@@ -56,6 +58,7 @@ public class SpiderLogic : MonoBehaviour
             player_detected = true;
             position_temp = agent.destination;
             agent.isStopped = true;
+            anim.SetBool("attacking", true);
             Debug.Log("DETECTED");
         }
         else
@@ -66,6 +69,7 @@ public class SpiderLogic : MonoBehaviour
                 GoToPos(position_temp);
             }
             player_detected = false;
+            anim.SetBool("attacking", false);
         }
         //---------------
 
