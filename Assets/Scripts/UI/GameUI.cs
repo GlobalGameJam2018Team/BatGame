@@ -56,6 +56,7 @@ public class GameUI : MonoBehaviour
 
     public void NextLevel()
     {
+        Time.timeScale = 1.0f;
         if (SceneManager.GetActiveScene().name == "Game 1")
         {
             SceneManager.LoadScene("Game 2");
