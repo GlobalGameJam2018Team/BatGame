@@ -6,6 +6,7 @@ public class SnakeLogic : MonoBehaviour {
 
     public GameObject player;
     private NavMeshAgent agent;
+    AudioSource audio;
 
     public float speed = 0.0f;
    
@@ -30,6 +31,8 @@ public class SnakeLogic : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
         GoToPos(positionB);
         agent.isStopped = false;
+        audio = GetComponent<AudioSource>();
+
         waitTime = 0.0f;
     }
 	
@@ -74,6 +77,7 @@ public class SnakeLogic : MonoBehaviour {
 
             if (playerPosition != Vector3.zero && !objectiveReached && canJump)
             {
+                audio.Play();
                 Vector3 diff = playerPosition - transform.position;
                 gameObject.transform.position += diff.normalized * speed;
                 if (diff.magnitude < 0.75f)

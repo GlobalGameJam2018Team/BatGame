@@ -7,6 +7,7 @@ public class SpiderLogic : MonoBehaviour
 {
     public GameObject player;
     private NavMeshAgent agent;
+    AudioSource audio;
 
     public Vector3 positionA;
     public Vector3 positionB;
@@ -30,9 +31,11 @@ public class SpiderLogic : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         agent.isStopped = false;
         agent.updateRotation = false;
-	}
-	
-	void Update ()
+        audio = GetComponent<AudioSource>();
+
+    }
+
+    void Update ()
     {
         //MOVEMENT
         if (!player_detected)
@@ -78,6 +81,7 @@ public class SpiderLogic : MonoBehaviour
         {
             if (shoot_timer >= shoot_cooldown)
             {
+                audio.Play();
                 shoot_timer = 0.0f;
                 GameObject projectile = GameObject.Instantiate(spider_projectile);
                 projectile.transform.position = transform.position;

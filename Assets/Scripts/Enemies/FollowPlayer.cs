@@ -8,6 +8,7 @@ public class FollowPlayer : MonoBehaviour
     public GameObject player;
     private SonarScript sonar;
     public SonarFx sonar_fx;
+    AudioSource audio;
 
     public float speed = 1.0f;
     public float detection_distance = 10.0f;
@@ -24,6 +25,8 @@ public class FollowPlayer : MonoBehaviour
     {
         sonar = player.GetComponent<SonarScript>();
         agent = GetComponent<NavMeshAgent>();
+        audio = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -34,6 +37,7 @@ public class FollowPlayer : MonoBehaviour
             foreach (Transform t in transformations)
                 if (t == transform && Input.GetKeyDown(KeyCode.Space)&& sonar_fx.GetCDActive())
                 {
+                    audio.Play();
                     chasing = true;
                     random = Random.Range(0.0f, 1.0f);
                 }

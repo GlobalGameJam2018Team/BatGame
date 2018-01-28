@@ -10,7 +10,9 @@ public class Lives : MonoBehaviour {
     public BlackBoard bBoard;
     Animator anim;
     bool can_die = true;
+    public AudioSource fly;
 
+    public AudioSource hit;
     void Start ()
     {
         anim = GetComponent<Animator>();
@@ -29,6 +31,8 @@ public class Lives : MonoBehaviour {
             }
             else
             {
+                fly.Stop();
+                hit.Play();
                 anim.SetBool("dead", true);
                 GetComponent<SphereCollider>().enabled=false;
                 GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
@@ -45,6 +49,7 @@ public class Lives : MonoBehaviour {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("dead") &&
    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
+                fly.Play();
                 anim.SetBool("dead", false);
                 GetComponent<SphereCollider>().enabled = true;
                 GetComponent<Rigidbody>().constraints =  RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
