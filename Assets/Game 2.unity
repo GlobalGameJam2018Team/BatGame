@@ -14002,11 +14002,10 @@ GameObject:
   - component: {fileID: 961977175}
   - component: {fileID: 961977174}
   - component: {fileID: 961977173}
-  - component: {fileID: 961977171}
   - component: {fileID: 961977169}
-  - component: {fileID: 961977165}
   - component: {fileID: 961977164}
   - component: {fileID: 961977163}
+  - component: {fileID: 961977165}
   m_Layer: 9
   m_Name: Ate:)
   m_TagString: Player
@@ -17438,7 +17437,7 @@ Animator:
   m_GameObject: {fileID: 961977162}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1e0b465b4d72d744c92d73fbae7cdef3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6dc35bcbcaef6e14789309c9b5b033e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17461,22 +17460,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &961977171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 961977162}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df8b05c5b714b74e8da18732fce993b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceleration: 1
-  speed_up_down: 0.3
-  speed_right_left: 0.3
-  max_speed_up_down: 1.5
-  max_speed_right_left: 1.5
 --- !u!135 &961977173
 SphereCollider:
   m_ObjectHideFlags: 0
