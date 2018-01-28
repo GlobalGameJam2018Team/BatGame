@@ -41,6 +41,10 @@ public class Lives : MonoBehaviour {
         }
         if(collision.gameObject.layer == 15)
         {
+            GetComponent<SphereCollider>().enabled = false;
+
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            GetComponent<Rigidbody>().useGravity = false;
             GameObject.Find("Canvas").GetComponent<GameUI>().WinGame(GetComponent<PlayerController2>().GetRatsHunted());
         }
 
