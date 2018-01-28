@@ -89,4 +89,9 @@ public class PlayerController2 : MonoBehaviour {
     {
         rats_hunted++;
     }
+
+    public int GetRatsHunted()
+    {
+        return rats_hunted;
+    }
 }

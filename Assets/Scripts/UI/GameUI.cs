@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
     public GameObject lose_panel;
+    public GameObject win_panel;
 
+    
+    public Text rats_num;
     public GameObject spider_img;
     public GameObject bad_bat_img;
     public GameObject snake_img;
@@ -45,6 +49,21 @@ public class GameUI : MonoBehaviour
             spikes_img.SetActive(true);
     }
 
+    public void WinGame(int rats)
+    {
+        rats_num.text = rats.ToString();
+        win_panel.SetActive(true);
+
+    }
+
+    public void NextLevel()
+    {
+        if (SceneManager.GetActiveScene().name == "Game 1")
+        {
+            SceneManager.LoadScene("Game 2");
+        }
+        else SceneManager.LoadScene(0);
+    }
 
     public void RestartGame()
     {
