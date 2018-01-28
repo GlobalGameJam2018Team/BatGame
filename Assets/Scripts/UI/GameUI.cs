@@ -8,7 +8,6 @@ public class GameUI : MonoBehaviour
 {
     public GameObject lose_panel;
     public GameObject win_panel;
-
     
     public Text rats_num;
     public GameObject spider_img;
@@ -53,7 +52,6 @@ public class GameUI : MonoBehaviour
     {
         rats_num.text = rats.ToString();
         win_panel.SetActive(true);
-
     }
 
     public void NextLevel()

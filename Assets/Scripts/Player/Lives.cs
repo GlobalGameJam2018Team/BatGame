@@ -27,7 +27,9 @@ public class Lives : MonoBehaviour {
             lives--;
             if (lives < 0)
             {
-                GameObject.Find("Canvas").GetComponent<GameUI>().LostGame(collision.gameObject);
+                GameObject go = GameObject.Find("Canvas");
+                GameUI test = go.gameObject.GetComponent<GameUI>();
+                test.LostGame(collision.gameObject);
             }
             else
             {
@@ -41,10 +43,7 @@ public class Lives : MonoBehaviour {
         }
         if(collision.gameObject.layer == 15)
         {
-            GetComponent<SphereCollider>().enabled = false;
-
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            GetComponent<Rigidbody>().useGravity = false;
+            Time.timeScale = 0.0f;
             GameObject.Find("Canvas").GetComponent<GameUI>().WinGame(GetComponent<PlayerController2>().GetRatsHunted());
         }
 
