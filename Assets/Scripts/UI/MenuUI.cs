@@ -12,12 +12,12 @@ public class MenuUI : MonoBehaviour
 
     public void HelpButton()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     public void CreditsButton()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void ExitButton()
