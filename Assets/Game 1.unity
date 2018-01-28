@@ -10814,7 +10814,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.1
-  m_BaseOffset: 3.26
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!4 &757353666
@@ -16324,6 +16324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16805832b05472c42ac642db4c5a2d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!65 &1247922470
 BoxCollider:
   m_ObjectHideFlags: 0
