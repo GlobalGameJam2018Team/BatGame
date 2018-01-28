@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: WaveMaterial
-  m_Shader: {fileID: 4800000, guid: f24b1979808e3b943b2566e54d4234f7, type: 3}
+  m_Name: Background 1
+  m_Shader: {fileID: 4800000, guid: 8d4149e5dd8c3304080503d54c50e3eb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 18e4f7df9511235409aff290212ac83a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -59,33 +59,18 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _ExternRingDiameter: 60
     - _GlossMapScale: 1
-    - _Glossiness: 0.447
+    - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Hardness: 19.53
-    - _InnerRadius: -1.03
-    - _InnerRingDiameter: -38.31771
-    - _MaximumFadeDistance: 19.85
     - _Metallic: 0
-    - _MinimumRenderDistance: 120.48
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OuterRadius: 9.41
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _SonarTime: 3.0137515
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
-    - _Distort: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Position: {r: 0.93, g: -2.3, b: -0.77, a: 1}
-    - _SonarAddColor: {r: 0, g: 0, b: 0, a: 0.266}
-    - _SonarBaseColor: {r: 0.19852942, g: 0.19852942, b: 0.19852942, a: 0}
-    - _SonarWaveColor: {r: 1, g: 0, b: 0, a: 1}
-    - _SonarWaveParams: {r: 1.8, g: 6.9, b: 11.2, a: 25.6}
-    - _SonarWaveVector: {r: -7.64831, g: 0.5, b: 1.331979, a: 1}
