@@ -26,23 +26,23 @@ public class FollowPlayer : MonoBehaviour
         sonar = player.GetComponent<SonarScript>();
         agent = GetComponent<NavMeshAgent>();
         audio = GetComponent<AudioSource>();
-
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (!chasing)
+        if (!chasing && Input.GetKeyDown(KeyCode.Space) && (player.transform.position - transform.position).magnitude <= detection_distance)
         {
             List<Transform> transformations = sonar.GetVisibleTargets();
             foreach (Transform t in transformations)
-                if (t == transform && Input.GetKeyDown(KeyCode.Space)&& sonar_fx.GetCDActive())
+                if (t == transform)
                 {
                     audio.Play();
                     chasing = true;
                     random = Random.Range(0.0f, 1.0f);
                 }
         }
-        else
+        if(chasing)
         {
             if (random <= 0.5f)
                 transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
