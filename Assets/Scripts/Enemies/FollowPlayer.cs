@@ -18,13 +18,12 @@ public class FollowPlayer : MonoBehaviour
     private float timer = 0.0f;
     Animator anim;
 
-    //Random between chasing using a pathfinding or just stright in a line to create variants
-    private float random = 0.0f;
-
     private void Start()
     {
         sonar = player.GetComponent<SonarScript>();
         agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.speed = speed;
         audio = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
     }
@@ -39,23 +38,17 @@ public class FollowPlayer : MonoBehaviour
                 {
                     audio.Play();
                     chasing = true;
-                    random = Random.Range(0.0f, 1.0f);
                 }
         }
-        if(chasing)
+        if (chasing)
         {
-            if (random <= 0.5f)
-                transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            else
+            //Update destination every second
+            if (timer >= 1.0f)
             {
-                //Update destination every second
-                if (timer >= 1.0f)
-                {
-                    agent.SetDestination(player.transform.position);
-                    timer = 0.0f;
-                }
-                timer += Time.deltaTime;
+                agent.SetDestination(new Vector3(player.transform.position.x, 0.0f, player.transform.position.z));
+                timer = 0.0f;
             }
+            timer += Time.deltaTime;
 
             if ((player.transform.position - transform.position).magnitude >= detection_distance)
                 chasing = false;

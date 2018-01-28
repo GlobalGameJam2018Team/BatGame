@@ -115,8 +115,7 @@ public class SnakeLogic : MonoBehaviour {
     }
 
     void GoToPos(Vector3 new_pos)
-    {
-      
+    {      
         agent.SetDestination(new_pos);
     }
 

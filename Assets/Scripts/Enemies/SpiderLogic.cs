@@ -32,7 +32,6 @@ public class SpiderLogic : MonoBehaviour
         agent.isStopped = false;
         agent.updateRotation = false;
         audio = GetComponent<AudioSource>();
-
     }
 
     void Update ()
