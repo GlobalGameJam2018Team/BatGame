@@ -20142,10 +20142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5748adecf3ff30849aab0725bd4342c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threeLives: {fileID: 21300000, guid: a708b5db12bd67a4e984b1499e766dcf, type: 3}
-  twoLives: {fileID: 21300000, guid: 5d53e3b9721cb2b4ba9c24aed9ffa5bd, type: 3}
-  oneLife: {fileID: 21300000, guid: b4e45c6872576cb4fabd692cc16d5e74, type: 3}
-  zeroLives: {fileID: 21300000, guid: 6e15187bfaca8f44295fcef062e5b7a8, type: 3}
+  threeLives: {fileID: 21300000, guid: dfc25f5a402e53a45b5d6ffe5a0608e0, type: 3}
+  twoLives: {fileID: 21300000, guid: b19e1d1d62ccd7f48b7986cada94616f, type: 3}
+  oneLife: {fileID: 21300000, guid: 96382a526f201fd46b19f6fdee1585b0, type: 3}
+  zeroLives: {fileID: 21300000, guid: fcc07df3baae1b7418fc600cbea5818f, type: 3}
   player: {fileID: 1584621854}
 --- !u!199 &1351792898
 ParticleSystemRenderer:
@@ -20261,7 +20261,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1406316851
+  randomSeed: 1168512002
   InitialModule:
     serializedVersion: 3
     enabled: 1
