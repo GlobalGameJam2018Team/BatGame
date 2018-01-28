@@ -25,10 +25,13 @@ public class SnakeLogic : MonoBehaviour {
     private Vector3 playerPosition = new Vector3(0,0,0);
     private bool objectiveReached = false;
     private float waitTime = 0.0f;
+    public bool move = true;
     // Use this for initialization
     void Start () {
         camera = GetComponent<Camera>();
         agent = GetComponent<NavMeshAgent>();
+
+        if(move)
         GoToPos(positionB);
         agent.isStopped = false;
         audio = GetComponent<AudioSource>();
@@ -39,23 +42,27 @@ public class SnakeLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         if (player_detected == false)
         {
           
                 Vector3 actual_pos = transform.position;
                 actual_pos.y = 0;
-            //For if we need to avoid the rotation: gameObject.transform.eulerAngles = new Vector3(0, 90, 0);
-            if ((actual_pos - positionA).magnitude <= min_distance)
+
+            if (move)
             {
-                transform.eulerAngles = new Vector3(0, -viewAngle, 0);
-                GoToPos(positionB);
+                //For if we need to avoid the rotation: gameObject.transform.eulerAngles = new Vector3(0, 90, 0);
+                if ((actual_pos - positionA).magnitude <= min_distance)
+                {
+                    transform.eulerAngles = new Vector3(0, -viewAngle, 0);
+                    GoToPos(positionB);
+                }
+                else if ((actual_pos - positionB).magnitude <= min_distance)
+                {
+                    transform.eulerAngles = new Vector3(0, viewAngle, 0);
+                    GoToPos(positionA);
+                }
             }
-            else if ((actual_pos - positionB).magnitude <= min_distance)
-            {
-                transform.eulerAngles = new Vector3(0, viewAngle, 0);
-                GoToPos(positionA);
-            }
-            
 
             if (GeometryUtility.TestPlanesAABB(GeometryUtility.CalculateFrustumPlanes(camera), player.GetComponent<Collider>().bounds))
             {
